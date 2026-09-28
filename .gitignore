@@ -17,3 +17,7 @@ slides/v03/pilot-manifest.json
 *.suo
 *.tmp
 ~$*
+slides/v04/history/
+slides/v04/renders/
+slides/v04/*-pilot.pptx
+slides/v04/pilot-manifest.json

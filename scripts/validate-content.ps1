@@ -27,5 +27,6 @@ if (-not $guided.StartsWith($baseline, [StringComparison]::Ordinal)) { throw 'Sh
 if ($IncludeSlides) {
     Invoke-Checked node @((Join-Path $RepoRoot 'slides/generate.mjs'), '--check')
     Invoke-Checked node @((Join-Path $RepoRoot 'slides/v03/generate.mjs'), '--check')
+    Invoke-Checked node @((Join-Path $RepoRoot 'slides/v04/generate.mjs'), '--check')
 }
 Write-Host 'Skill frontmatter, self-contained links, allowlist and shared prompts: pass.'

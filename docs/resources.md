@@ -12,10 +12,6 @@ Reviewed September 28, 2026.
 
 **Sample repository:** https://github.com/elbruno/GitHubCopilotModernizationSamples
 
-The v03 publication process verifies this exact destination and public access.
-Do not substitute the private production repository or share raw transcripts.
-
-Local resources: [quick start](../README.md), [skill](../.github/skills/northwind-modernization/SKILL.md),
-[five-demo setup](../demos/v03/README.md), [presenter guide](../demos/v03/runbook.md),
-[demo script](../demos/v03/demo-script.md), [speaker notes](../slides/v03/speaker-notes.md),
-[editable deck](../slides/v03/tribal-knowledge-to-code-v03.pptx).
+In this repository: [quick start](../README.md), [demo guide](../demos/learn/README.md),
+[skill](../.github/skills/northwind-modernization/SKILL.md),
+[team notes](../knowledge/team-notes.md).

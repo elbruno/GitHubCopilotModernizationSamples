@@ -7,7 +7,6 @@ Use the SDK pinned in `global.json` and preserve existing work.
   `dotnet test .\Northwind.slnx --no-build --no-restore`.
 - Also build/test `fixtures\legacy-input\Northwind.slnx`.
 - Full verification: `pwsh -File .\scripts\verify.ps1`.
-- Deck: `npm ci` then `npm run slides:build`. Source is `slides\content.mjs`.
 - `src` is the reference; `fixtures\legacy-input` is the independent starting
   app. Neither baseline nor guided output exists until a genuine run is captured.
 - Keep the acceptance evaluator, knowledge, and authoring instructions outside

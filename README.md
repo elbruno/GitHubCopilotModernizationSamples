@@ -3,52 +3,43 @@
 **Copilot knows the technology. Your team knows the exceptions. Custom skills
 connect the two.**
 
-Bruno Capuano | September 29, 2026 | Microsoft Reactor
+Sample code for Bruno Capuano's session on September 29, 2026 (Microsoft Reactor).
 
-This learning sample demonstrates a small **Newtonsoft.Json to System.Text.Json**
-dependency/API migration on .NET 10. All people, orders, organizational rules,
-and the audit component are **synthetic**. It is not an Azure migration,
-a framework upgrade, or a production-ready service. No taxes or currency
-conversion are modeled.
+This repository has a tiny .NET 10 quote service, a reusable GitHub Copilot
+skill, and five hands-on demos. The modernization task is a library migration:
+**Newtonsoft.Json to System.Text.Json**. All people, orders, rules and the
+audit component are **synthetic**. It isn't an Azure migration, a framework
+upgrade, or a production service.
 
-## Start here: v03, five demos
+## Start here: the five demos
 
-- [Five-demo setup](demos/v03/README.md) and [presenter runbook](demos/v03/runbook.md)
-- [Demo script: say/show/type/verify](demos/v03/demo-script.md)
-- [Run of show](demos/v03/run-of-show.md): 42 demo minutes and 10 minutes of Q&A
-- [Speaker notes](slides/v03/speaker-notes.md) and [slide outline](slides/v03/outline.md)
-- [Editable v03 PowerPoint](slides/v03/tribal-knowledge-to-code-v03.pptx)
-- [Slides-only v03 PDF](slides/v03/tribal-knowledge-to-code-v03.pdf)
-- [Reusable modernization skill](.github/skills/northwind-modernization/SKILL.md)
-- [Synthetic team notes](knowledge/team-notes.md) and [rules/contract](knowledge/rules-catalog.md)
-- [Product notes](docs/product-notes.md), [official resources](docs/resources.md),
-  [troubleshooting](demos/troubleshooting.md)
+Follow the **[demo guide](demos/learn/README.md)**. It sets up seven local demo
+folders and walks you through each demo:
 
-**The five demos:** try the task without the skill; author and review the skill;
-apply it to modernization; reproduce and repair a deliberate contract bug;
-reuse the skill for batch serialization. Seven local checkpoints provide
-honestly labeled fallbacks. The slides are transition markers, not a lecture.
+1. [The task without the skill](demos/learn/demo01.md)
+2. [Turn team knowledge into a skill](demos/learn/demo02.md)
+3. [Apply the skill](demos/learn/demo03.md)
+4. [Break a rule, catch it, fix it](demos/learn/demo04.md)
+5. [Reuse the skill](demos/learn/demo05.md)
 
-```powershell
-$demo = Join-Path ([IO.Path]::GetTempPath()) ('northwind-v03-' + [guid]::NewGuid())
-pwsh -NoProfile -File .\scripts\prepare-v03.ps1 -Destination $demo
-pwsh -NoProfile -File .\scripts\test-v03.ps1 -Workspace $demo `
-  -OutputDirectory (Join-Path $PWD ('artifacts\v03-' + [guid]::NewGuid()))
-```
+## What's in the repository
 
-Preparation refuses existing destinations. The scripted rehearsal deliberately
-expects one specific failing assertion, repairs it, verifies real green tests,
-then restores the teaching bug for the session. This is not a fabricated
-Copilot run. Open only one numbered checkpoint at a time.
+| Path | What it is |
+| --- | --- |
+| [`.github/skills/northwind-modernization`](.github/skills/northwind-modernization/SKILL.md) | The reviewed custom skill: rules, examples and review checklist |
+| [`knowledge/team-notes.md`](knowledge/team-notes.md) | The fictional team's tribal knowledge |
+| [`knowledge/rules-catalog.md`](knowledge/rules-catalog.md) | The four rules (R1-R4) and the JSON contract |
+| `fixtures/legacy-input` | The working legacy app on Newtonsoft.Json |
+| `src`, `tests` | The authored System.Text.Json reference and its tests |
+| `prompts`, `demos/v03/prompts` | The exact prompts used in the demos |
+| `scripts` | Set-up, checks, export and evaluation scripts |
 
-## Five-minute quick start
+## Quick start
 
-Prerequisites: .NET **10.0.401** SDK or a later patch in that feature band.
-Node **24 LTS** is needed only to regenerate slides. PowerShell **7** runs
-the convenience scripts. Initial dependency restore needs the network.
-The restored app runs locally without credentials, cloud, containers or a
-database. Actual Copilot generation separately requires an enabled account
-and network access.
+You need the .NET SDK **10.0.401** (or a later 10.0 patch) and PowerShell 7.
+The first restore needs network access. After that, everything runs locally
+with no cloud, containers, database or credentials. The Copilot steps need a
+signed-in GitHub Copilot account.
 
 ```powershell
 dotnet restore .\Northwind.slnx --locked-mode
@@ -57,51 +48,36 @@ dotnet test .\Northwind.slnx --no-build --no-restore
 dotnet run --no-build --project .\src\Northwind.Quotes -- .\fixtures\requests\partner.json
 ```
 
-Expected stdout, comparing JSON semantics rather than whitespace/trailing zeros:
+Expected output (stdout):
 
 ```json
-{"order_id":"ORDER-001","customer_type":"partner","subtotal":300,"discount":30,"shipping":0,"total":270,"review_note":null}
+{"order_id":"ORDER-001","customer_type":"partner","subtotal":300.00,"discount":30.00,"shipping":0.0,"total":270.00,"review_note":null}
 ```
 
-Stderr is a separate structured event:
+A separate audit event goes to stderr:
 
 ```json
-{"event_name":"quote_calculated","correlation_id":"DEMO-001","total":270}
+{"event_name":"quote_calculated","correlation_id":"DEMO-001","total":270.00}
 ```
 
-Help: `dotnet run --no-build --project .\src\Northwind.Quotes -- --help`.
-No argument or `-` reads stdin. The invalid fixture exits 2 with empty stdout
-and `Invalid quote request.` on stderr. Other exits: 3 I/O error, 64 usage,
-0 success/help. Customer ID/email are never returned.
+Run everything the CI runs:
 
-The six required business examples, contract validation, audit events and
-supported diagnostic paths are tested. Finite tests do not prove all possible
-privacy properties or guarantee compliance.
+```powershell
+pwsh -File .\scripts\verify.ps1
+```
 
-## Legacy and reference, not fabricated agent results
-
-| State | Path | Status |
-| --- | --- | --- |
-| Legacy | `fixtures/legacy-input` | Working Newtonsoft.Json 13.0.4 app, two visible smoke tests |
-| Reference | `src` | Authored, tested System.Text.Json implementation |
-| Baseline capture | `demos/captures/baseline.json` | **not-run** |
-| Guided capture | `demos/captures/guided.json` | **not-run** |
+The legacy app works the same way:
 
 ```powershell
 dotnet restore .\fixtures\legacy-input\Northwind.slnx --locked-mode
 dotnet build .\fixtures\legacy-input\Northwind.slnx --no-restore
 dotnet test .\fixtures\legacy-input\Northwind.slnx --no-build --no-restore
-dotnet run --no-build --project .\fixtures\legacy-input\src\Northwind.Quotes -- .\fixtures\requests\partner.json
 ```
 
-Do not use the whole repository as a baseline input: it contains the rules
-and reference answers. Exports use an explicit allowlist, match source/test
-hashes, and add only the self-contained skill to guided input.
+## Optional: compare runs with and without the skill
 
-## Optional independent comparison
-
-Choose a new existing parent outside this repository and its instruction
-scope. Destinations must not already exist. The following paths are examples:
+Don't use this whole repository as Copilot's workspace. It contains the rules
+and the answers. Export clean copies to a new folder outside the repository:
 
 ```powershell
 $parent = 'D:\NorthwindFreshDemo'
@@ -110,61 +86,22 @@ pwsh -File .\scripts\export-demo.ps1 -RunType baseline -Destination "$parent\bas
 pwsh -File .\scripts\export-demo.ps1 -RunType guided -Destination "$parent\guided"
 ```
 
-Open each root in a **fresh** Copilot conversation, with the same host, mode,
-model and settings. Use the exact [baseline prompt](prompts/01-baseline.txt)
-and [guided prompt](prompts/02-guided.txt). Inventory personal/global/app
-instructions, skills and plugins; no verified neutral profile is assumed.
-If neutral context cannot be established, label it a contextual walkthrough.
-Dedicated Upgrade-agent use of this skill is unverified; general app agent
-mode is the prepared route.
-
-Evaluate a candidate externally:
+Open each folder in a **fresh** Copilot conversation with the same model and
+settings. Use [`prompts/01-baseline.txt`](prompts/01-baseline.txt) and
+[`prompts/02-guided.txt`](prompts/02-guided.txt). Then check each result:
 
 ```powershell
-pwsh -File .\scripts\evaluate.ps1 -CandidateRoot "$parent\baseline" -OutputDirectory .\artifacts\baseline-evaluation-01
-pwsh -File .\scripts\compare.ps1 -BaselineRoot "$parent\baseline" -GuidedRoot "$parent\guided" -OutputDirectory .\artifacts\comparison-01
+pwsh -File .\scripts\evaluate.ps1 -CandidateRoot "$parent\baseline" -OutputDirectory .\artifacts\baseline-eval
+pwsh -File .\scripts\evaluate.ps1 -CandidateRoot "$parent\guided" -OutputDirectory .\artifacts\guided-eval
 ```
 
-The comparison above deliberately reports **not-run** and exits 2 until real
-capture files are supplied. Follow the [runbook](demos/runbook.md) to record
-metadata, seal output hashes and pass `-BaselineCapture` / `-GuidedCapture`.
-Exit 1 means failed applicable checks, 2 incomplete/blocked/not-run, and 0
-all required evaluated checks/reviews passed. Missing evidence is not success.
+`compare.ps1` reports **not-run** until you record real runs with
+[`demos/captures/capture-template.json`](demos/captures/capture-template.json).
+Exit codes: 0 all checks passed, 1 a check failed, 2 incomplete or not run.
+No sample Copilot results are included; the captures in `demos/captures` are
+intentionally marked not-run.
 
-## Presentation and verification
+## Learn more
 
-```powershell
-npm ci --ignore-scripts
-npm run slides:build
-npm run slides:package-check
-pwsh -File .\scripts\verify.ps1
-pwsh -File .\scripts\rehearsal.ps1
-```
-
-The v03 deck is editable 16:9 with 12 slides and embedded speaker notes.
-`slides/v03/content.mjs` and `demos/v03/session.json` drive the deck, timeline,
-outline and standalone notes. Diagrams/text are native editable shapes; the
-presenter photo and original conceptual Flare artwork are embedded images.
-Rebuilding makes no image-service calls. Prior v01/v02 files are preserved;
-the default build commands now target v03.
-On Windows with desktop PowerPoint, render into a **new** directory:
-
-```powershell
-New-Item -ItemType Directory -Path .\slides\v03\renders -Force
-pwsh -File .\tools\slides\render-powerpoint.ps1 -InputPath .\slides\v03\tribal-knowledge-to-code-v03.pptx -OutputDirectory .\slides\v03\renders\my-review-01 -ExpectedSlideCount 12 -NotesManifestPath .\slides\v03\build-manifest.json
-```
-
-Inspect all pages after regeneration. Prior render evidence is invalid when
-the PPTX hash changes. Presenter approval, host-route rehearsal and human
-timing are separate from generated artifacts and scripted preflight.
-
-Without PowerShell, use the `dotnet` and `npm` commands above directly.
-On macOS/Linux use `/` instead of `\` in terminal paths; native PowerPoint COM
-rendering is Windows-only. CI validates code and generates PPTX but does not
-publish, deploy, or run independent Copilot sessions.
-
-Public sample: https://github.com/elbruno/GitHubCopilotModernizationSamples
-
-See [maintenance](docs/maintenance.md) before updating dependencies, contracts
-or skills. A scripted rehearsal is not a timed human rehearsal; independent
-baseline/guided Copilot captures remain not-run until genuinely recorded.
+- [Session resources and official docs](docs/resources.md)
+- [Maintaining the sample and skill](docs/maintenance.md)

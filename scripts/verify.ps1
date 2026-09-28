@@ -13,8 +13,14 @@ try {
     $env:QUOTE_APP_DLL = Join-Path $RepoRoot 'fixtures/legacy-input/src/Northwind.Quotes/bin/Debug/net10.0/Northwind.Quotes.dll'
     Invoke-Checked dotnet @('test','tests/Northwind.AcceptanceTests','--no-build','--no-restore')
     $env:QUOTE_APP_DLL = $null
-    & (Join-Path $PSScriptRoot 'validate-content.ps1') -IncludeSlides
-    Invoke-Checked npm @('run','slides:package-check')
+    if (Test-Path -LiteralPath (Join-Path $RepoRoot 'slides/generate.mjs')) {
+        & (Join-Path $PSScriptRoot 'validate-content.ps1') -IncludeSlides
+        Invoke-Checked npm @('run','slides:package-check')
+    }
+    else {
+        & (Join-Path $PSScriptRoot 'validate-content.ps1')
+        Write-Host 'No slide sources in this checkout; slide checks skipped.'
+    }
     foreach ($kind in @('baseline','guided')) {
         $capture = Get-Content -LiteralPath "demos/captures/$kind.json" -Raw | ConvertFrom-Json
         Write-Host "Independent $kind capture: $($capture.status) (separate from code verification)."
