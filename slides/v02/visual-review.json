@@ -1,0 +1,63 @@
+{
+  "version": "v02-draft",
+  "status": "producer-reviewed draft; presenter approval pending",
+  "pptxSha256": "26c3a44cf544115050d6e2bd7bbb292f56541407da84ee5631d820a259781b78",
+  "nativeRender": {
+    "receipt": "renders/round-03/native-receipt.json",
+    "renderer": "Microsoft PowerPoint 16.0",
+    "slideCount": 12,
+    "notesMatched": 12,
+    "textShapesChecked": 119,
+    "textOverflows": 0
+  },
+  "independentReview": {
+    "reviewer": "Independent visual-review agent",
+    "renderRound": "round-02",
+    "slidesInspected": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "surface": "All twelve full-resolution native PNGs",
+    "blockingFinding": "Slide 2 showed input multiplication and a final total without explaining intervening pricing rules",
+    "fix": "Added subtotal, rounded partner discount and shipping, preserving the actual expected total",
+    "polishAddressed": [
+      "Improved context-map lower spacing",
+      "Centered migration and maintenance-loop arrows",
+      "Tightened grouping on the null-contract and skill-package slides",
+      "Replaced repeated guided-pass art with an editable workflow",
+      "Lifted the guided-pass supporting caption",
+      "Removed a duplicated closing call to action",
+      "Reduced the pending sample-link caption to two lines"
+    ]
+  },
+  "finalReinspection": {
+    "reviewer": "Authoring agent",
+    "renderRound": "round-03",
+    "changedSlidesVisuallyRechecked": [2, 4, 5, 6, 7, 8, 10, 11, 12],
+    "unchangedSlidePngHashesMatchedAgainstIndependentlyReviewedRound": [1, 3, 9],
+    "streamView": {
+      "resolution": "1280x720",
+      "slides": [2, 4, 8],
+      "result": "Pricing explanation, context matrix and guided workflow remain readable"
+    },
+    "blockingFindingsRemaining": [],
+    "nonblockingNotes": [
+      "Presenter photograph keeps its original lectern and red-background context rather than aggressive cropping",
+      "Knowledge-transfer art retains extra white space to preserve all floating notes and bubbles",
+      "Comparison status remains prominent to avoid implying captured agent evidence",
+      "Resource headings are clickable; full official URLs are in notes rather than tiny on-slide URLs",
+      "The editorial frame and takeaway motif remains deliberately consistent; presenter design preference is still pending"
+    ]
+  },
+  "internalPdf": {
+    "path": "renders/round-03/slides-only.pdf",
+    "sha256": "ba0198cba63723f0c261214b8c820b6c3c719d367fd64e218af685326e37c14d",
+    "pageCount": 12,
+    "slidesOnlyTextCheck": "pass",
+    "pageByPagePdfVisualReview": "pending",
+    "publicationApproved": false
+  },
+  "preservedV01PptxSha256": "4f00108d98be982dfc06a435243d56b46aca99f56c5d29d037b4fe41e8d2592b",
+  "presenterApproval": "pending",
+  "timedHumanRehearsal": "not-run",
+  "sunburstGeneration": "not-run",
+  "independentCopilotCaptures": "not-run",
+  "publicPublication": "not-run"
+}

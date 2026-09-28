@@ -1,0 +1,6 @@
+Review this candidate after generation against the external R1-R4 evaluator.
+Inspect the actual diff, not only the summary. Check the dependency graph,
+pricing, JSON contract, approved audit path, and diagnostic privacy.
+Distinguish automated evidence from manual source review and infrastructure
+failures. Preserve any failed original result; label corrections separately.
+Do not silently edit the capture or claim that tests prove compliance.

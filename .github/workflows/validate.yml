@@ -1,0 +1,43 @@
+name: Validate local sample
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=high
+      - run: npm run slides:build
+      - name: Verify reference, legacy, skill and PowerPoint package
+        shell: pwsh
+        run: ./scripts/verify.ps1
+      - name: Verify external allowlist exports and manifests
+        shell: pwsh
+        run: ./scripts/test-export.ps1 -OutputParent (Join-Path $env:RUNNER_TEMP ("northwind-" + [guid]::NewGuid()))
+      - name: Rehearse five-demo teaching checkpoints
+        shell: pwsh
+        run: |
+          $demo = Join-Path $env:RUNNER_TEMP ("northwind-v03-" + [guid]::NewGuid())
+          ./scripts/prepare-v03.ps1 -Destination $demo
+          ./scripts/test-v03.ps1 -Workspace $demo -OutputDirectory (Join-Path $env:RUNNER_TEMP "v03-evidence")
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editable-deck
+          path: |
+            slides/v03/tribal-knowledge-to-code-v03.pptx
+            slides/v03/build-manifest.json
+            slides/v03/speaker-notes.md
+            slides/v03/outline.md

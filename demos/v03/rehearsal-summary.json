@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "kind": "scripted-teaching-rehearsal",
+  "recordedUtc": "2026-09-28T21:38:06.9997144Z",
+  "agentRuns": "not-run",
+  "humanTimedRehearsal": "not-run",
+  "expectedFailure": "Exactly one PreservesExplicitNull assertion in the deliberately broken teaching fixture; the unchanged test passed after scripted repair",
+  "testSuites": [
+    {
+      "checkpoint": "01-baseline-tests",
+      "tests": 2,
+      "executed": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "checkpoint": "02-author-skill-tests",
+      "tests": 2,
+      "executed": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "checkpoint": "03-guided-tests",
+      "tests": 2,
+      "executed": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "checkpoint": "04-reference-tests",
+      "tests": 10,
+      "executed": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "checkpoint": "04-reference-tests",
+      "tests": 54,
+      "executed": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "checkpoint": "06-reuse-start-tests",
+      "tests": 10,
+      "executed": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "checkpoint": "06-reuse-start-tests",
+      "tests": 54,
+      "executed": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "checkpoint": "07-reuse-complete-tests",
+      "tests": 13,
+      "executed": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    {
+      "checkpoint": "07-reuse-complete-tests",
+      "tests": 54,
+      "executed": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "checkpoint": "null-after",
+      "tests": 1,
+      "executed": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    {
+      "checkpoint": "null-before",
+      "tests": 1,
+      "executed": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    {
+      "checkpoint": "null-fixed-full-tests",
+      "tests": 10,
+      "executed": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "checkpoint": "null-fixed-full-tests",
+      "tests": 54,
+      "executed": 54,
+      "passed": 54,
+      "failed": 0
+    }
+  ],
+  "steps": [
+    {
+      "name": "01-baseline-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.71
+    },
+    {
+      "name": "01-baseline-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.21
+    },
+    {
+      "name": "01-baseline-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.38
+    },
+    {
+      "name": "02-author-skill-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.69
+    },
+    {
+      "name": "02-author-skill-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.16
+    },
+    {
+      "name": "02-author-skill-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.37
+    },
+    {
+      "name": "03-guided-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.71
+    },
+    {
+      "name": "03-guided-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.27
+    },
+    {
+      "name": "03-guided-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.46
+    },
+    {
+      "name": "04-reference-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.71
+    },
+    {
+      "name": "04-reference-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.21
+    },
+    {
+      "name": "04-reference-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 4.58
+    },
+    {
+      "name": "05-null-regression-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.76
+    },
+    {
+      "name": "05-null-regression-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.23
+    },
+    {
+      "name": "06-reuse-start-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.75
+    },
+    {
+      "name": "06-reuse-start-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.28
+    },
+    {
+      "name": "06-reuse-start-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 4.81
+    },
+    {
+      "name": "07-reuse-complete-restore",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.82
+    },
+    {
+      "name": "07-reuse-complete-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.4
+    },
+    {
+      "name": "07-reuse-complete-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 4.73
+    },
+    {
+      "name": "null-before",
+      "exitCode": 1,
+      "expectedExit": 1,
+      "seconds": 1.18
+    },
+    {
+      "name": "null-fixed-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.92
+    },
+    {
+      "name": "null-after",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 1.42
+    },
+    {
+      "name": "null-fixed-full-tests",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 5.78
+    },
+    {
+      "name": "null-restored-build",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "seconds": 0.97
+    }
+  ],
+  "nullCheckpointAtEnd": "restored to deliberately broken source and rebuilt",
+  "provenance": "Sanitized summary of actual local command and TRX evidence; raw logs retained privately",
+  "sourceHashes": {
+    "scripts/prepare-v03.ps1": "c414cde18f1ffd73e804830a9c6e1c25d8b77c5eff3e6a1f7887ca7f6e0b7f94",
+    "scripts/test-v03.ps1": "8b72d0a20cb1033c8ab37d74685a0e1d78fe6d80207e34a0de1f5868a7680371",
+    "scripts/set-demo-null-rule.ps1": "dc75aa48276c0f353ffb4fd65af8c7f536749a232667aa0206ac74f12e7374bf",
+    ".github/skills/northwind-modernization/SKILL.md": "a7b9934b171a6bf1b9d5feb8f78abfd935119e9be5cd0340b2add799315efe1d",
+    "tests/Northwind.UnitTests/SerializationTests.cs": "10ef30229346262051a5a48184df2ed35ac25a0b3e63b3690b858cc43b31600c",
+    "demos/v03/checkpoints/WriteBatch.method.txt": "d52fe9bd92e8130290b8bc164adc1843846e516b912dd93968d02127f9384b47",
+    "demos/v03/checkpoints/BatchSerializationTests.cs": "93dff39f5653cb5ac63bb65d87221badb3906ea456cb0bb0bd211a353638a263"
+  }
+}

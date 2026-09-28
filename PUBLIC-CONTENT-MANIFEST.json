@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "stagedUtc": "2026-09-28T21:39:55.4733169Z",
+  "status": "local attendee package; not a publication receipt",
+  "excluded": [
+    "internal bootstrap brief",
+    "internal README",
+    "production planning",
+    "raw captures/logs",
+    "render rounds",
+    "deck history",
+    "personal configuration",
+    "build caches",
+    "unrelated skills"
+  ],
+  "files": [
+    {
+      "path": ".editorconfig",
+      "sha256": "2efc25fac55f15de9a5adb38d63ce1088f497e18ce68313f51f086a36f25b9ce"
+    },
+    {
+      "path": ".github/copilot-instructions.md",
+      "sha256": "517332b75cd94f8f76c68284d7a735e2ea7623fa528ead9af7899f695dc6b781"
+    },
+    {
+      "path": ".github/skills/northwind-modernization/references/audit-and-privacy.md",
+      "sha256": "8a28903d975370fb50d233320554bd4ea25fda4858d3773f56b45c57bc30120c"
+    },
+    {
+      "path": ".github/skills/northwind-modernization/references/pricing-and-contract.md",
+      "sha256": "f03d2a9a166719507dfa9489996b266a19c44016bbb6c7303caa28844474df15"
+    },
+    {
+      "path": ".github/skills/northwind-modernization/references/review-checklist.md",
+      "sha256": "a27817e85ac275313c52efc09abb8480543237dfb3a80b6fc677ddd4172eb79b"
+    },
+    {
+      "path": ".github/skills/northwind-modernization/SKILL.md",
+      "sha256": "a7b9934b171a6bf1b9d5feb8f78abfd935119e9be5cd0340b2add799315efe1d"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "df71d155af2caeb0bc792ddf6a2f550e4b47e7b0e3e951ae3320ef662088abf9"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "faf5ce486803eb3a03beb2b2596a4d966609231d0205a02a98967032f12b8e3c"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "318005a48dd48023832c89a67fcc1f03926da16d5998197d083314a9faa414bb"
+    },
+    {
+      "path": "demos/captures/baseline.json",
+      "sha256": "94ca436006fcc0164cca49b17f86fdbc012e47a16bd1bd7ac96681c3db422985"
+    },
+    {
+      "path": "demos/captures/capture-template.json",
+      "sha256": "ae5f20ccc28921b757d5741ea8637c5c21162c54a733fffd8f1f5839b22eeeba"
+    },
+    {
+      "path": "demos/captures/comparison-not-run.json",
+      "sha256": "8abbdf3969cf01437cbbd504e7304173059d7af0530339de3de8cddc2a202a73"
+    },
+    {
+      "path": "demos/captures/comparison-not-run.md",
+      "sha256": "fed674df9214d260b817d2a3a6e37b90de0e499fbcdd0382234ffb40742bfa37"
+    },
+    {
+      "path": "demos/captures/guided.json",
+      "sha256": "025b7003317453361146673f8d551fa4bdb480bdffec1a7f761980761e010cb1"
+    },
+    {
+      "path": "demos/README.md",
+      "sha256": "7c276991a62af5dc09b583f736f8046122154c6f24455edddbacee220848facf"
+    },
+    {
+      "path": "demos/reference-evidence.json",
+      "sha256": "100edfe9bf9cf0613ab9c175e3ec30972aebd824c643113f70cf051366639172"
+    },
+    {
+      "path": "demos/runbook.md",
+      "sha256": "e98a4d405fa91ca8ab7305cfe7560385f8576e9045748cc94e892406c3a34293"
+    },
+    {
+      "path": "demos/troubleshooting.md",
+      "sha256": "14bef875b229269bfc3fdfc60a720bfab22e15d7c920f87cfe985eb47f816c61"
+    },
+    {
+      "path": "demos/v03/checkpoints/BatchSerializationTests.cs",
+      "sha256": "93dff39f5653cb5ac63bb65d87221badb3906ea456cb0bb0bd211a353638a263"
+    },
+    {
+      "path": "demos/v03/checkpoints/WriteBatch.method.txt",
+      "sha256": "d52fe9bd92e8130290b8bc164adc1843846e516b912dd93968d02127f9384b47"
+    },
+    {
+      "path": "demos/v03/demo-script.md",
+      "sha256": "ef1f19945207218220cfaa41da42a5ab255d53e2b0347c99ff8b5930956e21c7"
+    },
+    {
+      "path": "demos/v03/prompts/02-author-skill.txt",
+      "sha256": "e6019b6550d540b9879869582d30ada0c69a2046583d3c14b611a4527e1a400e"
+    },
+    {
+      "path": "demos/v03/prompts/04-repair.txt",
+      "sha256": "f7807cc53e7ba0dd939644d668ac5434376170aff5480cc19fdbe37cf498794f"
+    },
+    {
+      "path": "demos/v03/prompts/05-reuse.txt",
+      "sha256": "2d59c24bf24b8480b903b4964c8e9430e8b1af58d706b4aa604830057ea14a8a"
+    },
+    {
+      "path": "demos/v03/README.md",
+      "sha256": "c9dae59fff13f98cb5b45583e7f13e248250498b334d81ac8e81805cba02d7d8"
+    },
+    {
+      "path": "demos/v03/rehearsal-summary.json",
+      "sha256": "b6cb0928bf3b9ed5ac5112ff48e9a0b210fc1193f472d9c31ef311af28d70182"
+    },
+    {
+      "path": "demos/v03/run-of-show.md",
+      "sha256": "dd8c6a950b01fc47628f90a988e0de081c4eaf782c6d976df969289080d89922"
+    },
+    {
+      "path": "demos/v03/runbook.md",
+      "sha256": "78ef49d6ea27f689df6c366003aa377a41e99798c93da859e881840800691c1f"
+    },
+    {
+      "path": "demos/v03/session.json",
+      "sha256": "0ca654acc27fc66ab7cdf14db2afd9188c2493ff00a25e609ecdf1c9997b61a4"
+    },
+    {
+      "path": "Directory.Build.props",
+      "sha256": "99965a5ed8bef7ec9d165f2341fd59592d41ab03dbadc409b34be341192cd2d1"
+    },
+    {
+      "path": "docs/maintenance.md",
+      "sha256": "6df6629dee8fc66a1a5a4b1a5c3577bc918a1a43790c6d7cab82d0fb7dddc0e2"
+    },
+    {
+      "path": "docs/product-notes.md",
+      "sha256": "4bb94b1c5195341538413fe866d068e567aa7b6f258411d5ebe780ac334a6b5f"
+    },
+    {
+      "path": "docs/resources.md",
+      "sha256": "7b9b8f75712215a2fec5e69a0ee5575e8fd96f9e7831df23cc971278396bdcc5"
+    },
+    {
+      "path": "fixtures/legacy-input/Directory.Build.props",
+      "sha256": "99965a5ed8bef7ec9d165f2341fd59592d41ab03dbadc409b34be341192cd2d1"
+    },
+    {
+      "path": "fixtures/legacy-input/global.json",
+      "sha256": "6a8e9044030d136bd4c04fff9684111a3478b27559bfb6d19e4d380f0de91510"
+    },
+    {
+      "path": "fixtures/legacy-input/Northwind.slnx",
+      "sha256": "09d4118461087a14ca9f0cf307b6952790a2e9d41cdcee22d38da7e06580ca0f"
+    },
+    {
+      "path": "fixtures/legacy-input/NuGet.Config",
+      "sha256": "07d0c144b87fb7c9234dabfd4d3cfcc3699ec34880b081e1614f550e97f37a4e"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Audit/AuditTrail.cs",
+      "sha256": "67e810bd5f1241cd89c821598e6adefe3c5a409df856c7cc1463e16cf94f7de3"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Audit/Northwind.Audit.csproj",
+      "sha256": "e6fcb8e1e93a724d47a829cffd19d47840a5eb088e9ace43f3a34bbaf1524b07"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Audit/packages.lock.json",
+      "sha256": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Domain/Northwind.Domain.csproj",
+      "sha256": "b525d12c71e01771e095f95bd323fc8b1f39a01d302bd5b476b0311a6ae134dd"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Domain/packages.lock.json",
+      "sha256": "0130237da7bf9b49fd80acdd70af0ea964ee0d88b95ca0fe0c52ed7588ca0ab8"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Domain/Quotation.cs",
+      "sha256": "24606f029330155de12b6ecb8ea00b5f987f12483a1763755455989d2e5bd733"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Quotes/Northwind.Quotes.csproj",
+      "sha256": "cb56784d621f69f91bc181bd2154a4b390ea6362db5c4d1be8dc1ba8b850ceda"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Quotes/packages.lock.json",
+      "sha256": "cea26c433ec8d433ff1ebeccf63a3fd77ab367d2cb5e27472a5463fbe32ee696"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Quotes/Program.cs",
+      "sha256": "8ab296280ba9e96720f76836f4f2c9f87f3c7ad7710f4f5a839b70706ec22788"
+    },
+    {
+      "path": "fixtures/legacy-input/src/Northwind.Quotes/QuoteJson.cs",
+      "sha256": "fe31ae390c6d8ae9316eb47197d3a103652c61b5d4ccf2d61e391e8c333bc92d"
+    },
+    {
+      "path": "fixtures/legacy-input/TASK.md",
+      "sha256": "3e227426ffd7ae205bbcfbbeaa8b2d7877c4014e7e4bc9a57fa0c171bf443eea"
+    },
+    {
+      "path": "fixtures/legacy-input/tests/Northwind.SmokeTests/Northwind.SmokeTests.csproj",
+      "sha256": "b38801f7c40175de61655b78a32fde4c254803df6318556a1679089bc2624303"
+    },
+    {
+      "path": "fixtures/legacy-input/tests/Northwind.SmokeTests/packages.lock.json",
+      "sha256": "40b59380bf73fcb809b269981f28e98f3d6540649c0bc8a3030274ee4b1f655d"
+    },
+    {
+      "path": "fixtures/legacy-input/tests/Northwind.SmokeTests/SmokeTests.cs",
+      "sha256": "d067cec7bf04837d555e22ccf70f92b9708de547608e82e15f19f018e1344387"
+    },
+    {
+      "path": "fixtures/requests/invalid.json",
+      "sha256": "7ab49b47948e9deb3a19a504d7fdd8bc5e3838b277322a0c4354fa1a6b348221"
+    },
+    {
+      "path": "fixtures/requests/partner.json",
+      "sha256": "364a36eb63de91512a9334275dafcce46a536128c575a7fcc535e85a023e5271"
+    },
+    {
+      "path": "global.json",
+      "sha256": "6a8e9044030d136bd4c04fff9684111a3478b27559bfb6d19e4d380f0de91510"
+    },
+    {
+      "path": "knowledge/rules-catalog.md",
+      "sha256": "913ea50c0566e6dcdc81e55855932184b50d20671ce68d95108b6550ff0ca12a"
+    },
+    {
+      "path": "knowledge/team-notes.md",
+      "sha256": "8c001f92990b0b09370484817010c34bb7e72bd964e06411722a628efcfbece5"
+    },
+    {
+      "path": "Northwind.slnx",
+      "sha256": "46e8058e42b066b0585b5f688b6200aa286cb7faa64019fadb1f9126fb70d507"
+    },
+    {
+      "path": "NuGet.Config",
+      "sha256": "07d0c144b87fb7c9234dabfd4d3cfcc3699ec34880b081e1614f550e97f37a4e"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "801dc0f8df2b626455e918e26a2527e2046d4cec3a0c60c9d70c76993946cd52"
+    },
+    {
+      "path": "package.json",
+      "sha256": "11207078af98b2155906ab65848bc73b269a6ea0a26d35e87728ca95a28a8f64"
+    },
+    {
+      "path": "prompts/01-baseline.txt",
+      "sha256": "4af44f447ed6290fed6d8e1769dfb601f7788648040d464439b1ec5b7bcffbc4"
+    },
+    {
+      "path": "prompts/02-guided.txt",
+      "sha256": "a55bf67af4d5c270ed72a7e9f4bf80f14ba68ff42c06f5e5b7948571a91ec6ed"
+    },
+    {
+      "path": "prompts/03-review.txt",
+      "sha256": "0650dc7cd8968b2de9938a8f152e548f7f131f92ca634e738df050ac7b646b53"
+    },
+    {
+      "path": "prompts/04-reuse.txt",
+      "sha256": "fe3072ef23880c175c0b6d6f4cf58545c169509a7dcf13d62eca668f2be6b5a7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0526e93392fcfd2c4dc1fde06ba12a955e3090c0965437f336c4aa13a66c2a28"
+    },
+    {
+      "path": "scripts/common.ps1",
+      "sha256": "9209c4e38a7e056e5ad2b4d84f03ac695bd44714694c02d59515688a8db92478"
+    },
+    {
+      "path": "scripts/compare.ps1",
+      "sha256": "58f88c4666e21e21aee373ca0fbabbf6d7743bb0fe145c8f9448a29274bac261"
+    },
+    {
+      "path": "scripts/demo-allowlist.json",
+      "sha256": "b5a342daa695822c2861263d8c256048754a628fac6a2828c86e1b99b21ffeef"
+    },
+    {
+      "path": "scripts/doctor.ps1",
+      "sha256": "3160b4c68881020f714919256881c903cca2a9680d7ba860ac3c83fcaae94e61"
+    },
+    {
+      "path": "scripts/evaluate.ps1",
+      "sha256": "e83427a7137382f3ccbe910054627cf63ff10eac8ca67c1f5dabacc151a4a63e"
+    },
+    {
+      "path": "scripts/export-demo.ps1",
+      "sha256": "91890b1e37cb9dcf9f6aa68db775c81b66833fc2fcd6d0204f927e1427613fea"
+    },
+    {
+      "path": "scripts/prepare-v03.ps1",
+      "sha256": "c414cde18f1ffd73e804830a9c6e1c25d8b77c5eff3e6a1f7887ca7f6e0b7f94"
+    },
+    {
+      "path": "scripts/rehearsal.ps1",
+      "sha256": "33de526c1cb03a6ae2edaa338cd8f4d5d73ce99e65e3b00c6a0b36de1628fd6a"
+    },
+    {
+      "path": "scripts/seal-capture.ps1",
+      "sha256": "6eb612d3b8646abf80b702b512088ea2502767ed8e21766d21de04e4eaa187ba"
+    },
+    {
+      "path": "scripts/set-demo-null-rule.ps1",
+      "sha256": "dc75aa48276c0f353ffb4fd65af8c7f536749a232667aa0206ac74f12e7374bf"
+    },
+    {
+      "path": "scripts/test-export.ps1",
+      "sha256": "338d31b8a39f88d29ccc44cbb007a052cb3f1464578bacee35651042777f7f25"
+    },
+    {
+      "path": "scripts/test-v03.ps1",
+      "sha256": "8b72d0a20cb1033c8ab37d74685a0e1d78fe6d80207e34a0de1f5868a7680371"
+    },
+    {
+      "path": "scripts/validate-content.ps1",
+      "sha256": "a6e30a1b056a8e6d45819dbba529912fe07222c32582ff843cc25d1d152af6a2"
+    },
+    {
+      "path": "scripts/verify.ps1",
+      "sha256": "7f1f1249dd87865acd430e01ad9a4a46235d519851ddedb3bb7e9a269f6ce39c"
+    },
+    {
+      "path": "slides/check-package.mjs",
+      "sha256": "79f7f47adcafc556477c8d96c36b75b05d7a86fdd81810c50935597d9c4b28c7"
+    },
+    {
+      "path": "slides/content.mjs",
+      "sha256": "362231a84304ad87a391406ecf7257ea40f32128e4b8cc662535935ef1dad519"
+    },
+    {
+      "path": "slides/dist/build-manifest.json",
+      "sha256": "ee5639dc87f3e15c6a44cb772df7916f298663917f729761f2020330f9aa09cb"
+    },
+    {
+      "path": "slides/dist/qa-summary.json",
+      "sha256": "5bc4f635631e9f7744fb2d482f10f2a82d023ed8eb60294e3aa84dbf56654799"
+    },
+    {
+      "path": "slides/dist/tribal-knowledge-to-code.pdf",
+      "sha256": "4533fcf9ae8e393eb41b7758f8d3d9ac3fad1502b91d76b1b03a6777ee77933e"
+    },
+    {
+      "path": "slides/dist/tribal-knowledge-to-code.pptx",
+      "sha256": "4f00108d98be982dfc06a435243d56b46aca99f56c5d29d037b4fe41e8d2592b"
+    },
+    {
+      "path": "slides/generate.mjs",
+      "sha256": "0740b40d2725014be67e20fac4feabea7c05992b3e4db70f69e7d984b54e32ea"
+    },
+    {
+      "path": "slides/outline.md",
+      "sha256": "41993d78590bd92727e68ef1b81000a7d499f9850d8a3747c19d9e28cc3dd18f"
+    },
+    {
+      "path": "slides/resources/Bruno Capuano - Headshot.jpg",
+      "sha256": "19814acf8cfde1709564db6613268264df5c651b8aa6099ba6082eba0c67e36b"
+    },
+    {
+      "path": "slides/speaker-notes.md",
+      "sha256": "df04e9df23d4315131e66d3192997fa3a4d5e00b60d7b41fcd34cff3f6e9d070"
+    },
+    {
+      "path": "slides/v02/asset-review.json",
+      "sha256": "665f7928ac6e91e6eca98671498244f277c2e9fc378f9062f252e0284f6778a5"
+    },
+    {
+      "path": "slides/v02/build-manifest.json",
+      "sha256": "12075b175e4c0358c5b0f5bc21ecb89cab524e0e6bc5f82efcd3703d5b67edaa"
+    },
+    {
+      "path": "slides/v02/content.mjs",
+      "sha256": "d4dd327a2d251f1f821489df8e94bc7b95072f0a8047ee19fa88dbbbb06e26cf"
+    },
+    {
+      "path": "slides/v02/generate.mjs",
+      "sha256": "b2d94b861f840c78b9b764d0b45dd6a99007535732207fc09ea54da460cea793"
+    },
+    {
+      "path": "slides/v02/image-prompts.json",
+      "sha256": "e99ab2c2d790807cffce075ad9e16ee1c8b6ffee0e3dad71373ccac1cf49e8ff"
+    },
+    {
+      "path": "slides/v02/images/careful-migration.json",
+      "sha256": "804920c52724d81bfad8b3cf0837737f60c8decf90e1de5bd264e7c40fdb2bfe"
+    },
+    {
+      "path": "slides/v02/images/careful-migration.png",
+      "sha256": "d3933e817676f839ed6ae4e75c7ec46312480798e8719e171d876720bb131838"
+    },
+    {
+      "path": "slides/v02/images/evidence-review.json",
+      "sha256": "e746b13ad2ea0de632675f39048b20dcbd128b55abc270153b7b7aa4c440a103"
+    },
+    {
+      "path": "slides/v02/images/evidence-review.png",
+      "sha256": "d996cc629be06ead366f1e0ae895261be8c7694e553cf9ed732bed51f7a44336"
+    },
+    {
+      "path": "slides/v02/images/knowledge-transfer.json",
+      "sha256": "8d8b09c4e7b15002c50cfa741def74fc3bc5ee8a1af28432bda6f8a25a5503c1"
+    },
+    {
+      "path": "slides/v02/images/knowledge-transfer.png",
+      "sha256": "fc6f6b8cb03b5557d84a874fbcdc44ddcf912adc4861992c85d55012b6b503a1"
+    },
+    {
+      "path": "slides/v02/images/skill-toolkit.json",
+      "sha256": "6b4fef483344724b202ad97641995d0a303142643006c2da067463f6a87af3f2"
+    },
+    {
+      "path": "slides/v02/images/skill-toolkit.png",
+      "sha256": "7765f5e595ead592bf7b4aa28abff791321335a9b9e2c06db226744146bd75d3"
+    },
+    {
+      "path": "slides/v02/outline.md",
+      "sha256": "3297a112552d593373d03ca11450453e058ca6f1e3321e12810ee7bf5f01fb19"
+    },
+    {
+      "path": "slides/v02/README.md",
+      "sha256": "07f318743d7b458a955b52022c1f27c7b1a4ea7f701398d42b215b3b1e290e75"
+    },
+    {
+      "path": "slides/v02/speaker-notes.md",
+      "sha256": "b2967e8f281a5b63ef3469f18869193bb3d3f7cc745cb53dc34b168f2268822e"
+    },
+    {
+      "path": "slides/v02/tribal-knowledge-to-code-v02-draft.pptx",
+      "sha256": "26c3a44cf544115050d6e2bd7bbb292f56541407da84ee5631d820a259781b78"
+    },
+    {
+      "path": "slides/v02/visual-review.json",
+      "sha256": "ca211e8c1f222d816adc42c049a86849c139b28212f38122aa441e7ef7d69f58"
+    },
+    {
+      "path": "slides/v03/build-manifest.json",
+      "sha256": "4273c2782d11eaee912899ec6207b09bf6906506caec32ad32f10ea52562ca17"
+    },
+    {
+      "path": "slides/v03/content.mjs",
+      "sha256": "5a6b86e924a2644bd957391b331a8597a5282ef7d87eb1d23e95e8a8ee1e3fee"
+    },
+    {
+      "path": "slides/v03/generate.mjs",
+      "sha256": "5fb0651995d3cb9c945f99c67b992e5fe754dcbaf50468f22c34355f04583eeb"
+    },
+    {
+      "path": "slides/v03/outline.md",
+      "sha256": "a2f3dc2c1e8c3a11f640a2d0c255f1f40e1c93896415c9b927ba6564ef0240bc"
+    },
+    {
+      "path": "slides/v03/README.md",
+      "sha256": "f703a7bc592970d2c7644cf98e24232122238389de2fa08085bf74a0f8aad3f1"
+    },
+    {
+      "path": "slides/v03/speaker-notes.md",
+      "sha256": "d9d5d5fafeb46ccc60e565664068ef65d1d494d8c6a309283e83f381b9c504ba"
+    },
+    {
+      "path": "slides/v03/tribal-knowledge-to-code-v03.pdf",
+      "sha256": "4a3b8b7a342c7c825eac5fddd3d137e41e4f655dabc05374fda1632a60125f08"
+    },
+    {
+      "path": "slides/v03/tribal-knowledge-to-code-v03.pptx",
+      "sha256": "32df72899f99c7de4b68ed98d4a0ecc68b1e726d9e820fbaaea91e8dd8f9894c"
+    },
+    {
+      "path": "slides/v03/visual-review.json",
+      "sha256": "c98262bd74d6e5538fc5639b56e1256c531be815128764f955d4401ab240332b"
+    },
+    {
+      "path": "src/Northwind.Audit/AuditTrail.cs",
+      "sha256": "67e810bd5f1241cd89c821598e6adefe3c5a409df856c7cc1463e16cf94f7de3"
+    },
+    {
+      "path": "src/Northwind.Audit/Northwind.Audit.csproj",
+      "sha256": "e6fcb8e1e93a724d47a829cffd19d47840a5eb088e9ace43f3a34bbaf1524b07"
+    },
+    {
+      "path": "src/Northwind.Audit/packages.lock.json",
+      "sha256": "a4364d81a6de2707d66fbced18fbbc926c882ab96e1d1aebbb17e871285b9d75"
+    },
+    {
+      "path": "src/Northwind.Domain/Northwind.Domain.csproj",
+      "sha256": "b525d12c71e01771e095f95bd323fc8b1f39a01d302bd5b476b0311a6ae134dd"
+    },
+    {
+      "path": "src/Northwind.Domain/packages.lock.json",
+      "sha256": "0130237da7bf9b49fd80acdd70af0ea964ee0d88b95ca0fe0c52ed7588ca0ab8"
+    },
+    {
+      "path": "src/Northwind.Domain/Quotation.cs",
+      "sha256": "24606f029330155de12b6ecb8ea00b5f987f12483a1763755455989d2e5bd733"
+    },
+    {
+      "path": "src/Northwind.Quotes/Northwind.Quotes.csproj",
+      "sha256": "4ae6638dc147ada933a604f7c9e67b1911c343af0663b81faf1e6f7f2463fc46"
+    },
+    {
+      "path": "src/Northwind.Quotes/packages.lock.json",
+      "sha256": "d6a28ce7d00e999073788dc1fc127e251a861a0e1397fd3aff4a5e6ed9210030"
+    },
+    {
+      "path": "src/Northwind.Quotes/Program.cs",
+      "sha256": "8ab296280ba9e96720f76836f4f2c9f87f3c7ad7710f4f5a839b70706ec22788"
+    },
+    {
+      "path": "src/Northwind.Quotes/QuoteJson.cs",
+      "sha256": "8da597a6160f4894b9537abf49e7b924aa9cbfc4922c3d1436f5da839ea1a09e"
+    },
+    {
+      "path": "tests/Northwind.AcceptanceTests/ContractTests.cs",
+      "sha256": "f3739eb6b038c0528b05ef78fbb19049c1fc54c6427304a8b7e4852e153729bc"
+    },
+    {
+      "path": "tests/Northwind.AcceptanceTests/Northwind.AcceptanceTests.csproj",
+      "sha256": "39e69ff4e5af2926d43ef87e97a3c0aaf07d3e75c8c239838b8b56bb97c3821f"
+    },
+    {
+      "path": "tests/Northwind.AcceptanceTests/packages.lock.json",
+      "sha256": "38fa4dc4794842db3410090d29be2608af1781b8f9ee9b10af16bb723893721b"
+    },
+    {
+      "path": "tests/Northwind.UnitTests/Northwind.UnitTests.csproj",
+      "sha256": "83fc7ea42e519b48cf0ed18339217538eac22ea172ea89efa01b753e80ab0c9a"
+    },
+    {
+      "path": "tests/Northwind.UnitTests/packages.lock.json",
+      "sha256": "399ec5fe0174e2441d9ecd94ff6b3b842ea9c6cb739f36eac1c42ce8593399f7"
+    },
+    {
+      "path": "tests/Northwind.UnitTests/PricingTests.cs",
+      "sha256": "8d967555c7743b6670d862d7fe2667bb50de68e27c71d31518111fdb08d7970e"
+    },
+    {
+      "path": "tests/Northwind.UnitTests/SerializationTests.cs",
+      "sha256": "10ef30229346262051a5a48184df2ed35ac25a0b3e63b3690b858cc43b31600c"
+    },
+    {
+      "path": "tools/slides/export-slides.ps1",
+      "sha256": "3a689f7980484d86e57f90c6c99ccd4c944f33746ab51affbc042616c6eab7be"
+    },
+    {
+      "path": "tools/slides/render-powerpoint.ps1",
+      "sha256": "fabb70ace36dacdec718c32c2850f3f971771d6136fbfa62fc327a5bf3d67605"
+    }
+  ]
+}

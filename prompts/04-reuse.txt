@@ -1,0 +1,5 @@
+Optional exercise, only after the main demo: use northwind-modernization to
+add a small batch-output serialization helper for two existing QuoteResponse
+objects. Keep the single-request CLI unchanged. Preserve each item's JSON
+contract, null and enum handling; add focused tests. Do not add a service or
+new application. Identify applicable rules and report actual evidence.

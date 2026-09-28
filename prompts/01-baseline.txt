@@ -1,0 +1,5 @@
+Modernize this quote application by replacing Newtonsoft.Json with
+System.Text.Json. Preserve existing observable behavior and the public JSON
+contract. Remove the Newtonsoft.Json dependency. Keep the solution small,
+run the existing tests, and explain the changes and remaining risks.
+Do not introduce external services or deploy anything.

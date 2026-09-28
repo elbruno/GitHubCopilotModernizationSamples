@@ -1,0 +1,14 @@
+Read knowledge/team-notes.md and inspect this small synthetic quote application.
+Create a reusable repository skill at
+.github/skills/northwind-modernization/SKILL.md with name and a task-specific
+description explaining when it should be used. Keep supporting references
+inside that skill's directory. Capture the team's pricing, JSON compatibility,
+approved audit path and safe diagnostics as explicit requirements.
+Include inspect-first steps, good and bad examples, observable verification,
+and honest completion reporting. Cover migration, contract regression repair
+and a small batch-serialization reuse task without broadening scope to other apps.
+For reuse: preserve item order and the per-item wire contract, return [] for
+empty input, reject a null collection, and do not change CLI/pricing/audit behavior.
+Do not implement the migration or change app code yet. Do not add dependencies,
+tools, services, credentials or tool preapprovals. Explain which notes informed
+each rule and surface ambiguities rather than inventing policy.

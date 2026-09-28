@@ -1,0 +1,14 @@
+{
+  "assetId": "careful-migration",
+  "slide": "S05",
+  "provider": "foundry-gpt-image-25-flare",
+  "prompt": "Original editorial comic illustration for a software engineering presentation. Premium clean 3D-meets-ink rendering, rounded geometric objects, deliberate dark purple outlines, dimensional soft shading, white background with a very subtle pale lavender grounding shadow. Restrained palette: vivid purple #512BD4, lilac #B9AAEE, pale lavender #EEEAFB, deep purple ink #190649, white. Friendly original small helper robot with a squared rounded head, two small circular eyes and compact box-shaped body, no antenna and no resemblance to any branded mascot. All subjects fully inside the frame with at least 12 percent white breathing room on every edge. Crisp silhouette, one strong focal story, composition understandable at thumbnail size, no busy scenery. Absolutely no text, letters, numbers, labels, code, logos, watermarks, user interfaces, screenshots, currency symbols, or product marks. This is conceptual artwork, not evidence of a real product or run. Do not create a slide or add a title. Scene: A small friendly purple helper robot performs a precise replacement of one lilac cube module in a compact white mechanical assembly on a clean tabletop. The assembly has three simple interlocking geometric parts. The robot holds the replacement cube in one hand while the original matching cube rests beside the assembly. Surrounding parts remain neatly intact. No sparks, damage, broken parts, symbols or checkmarks. Close three-quarter composition, fully framed. The story is a careful compatible component swap rather than rebuilding everything.",
+  "startedUtc": "2026-09-28T21:10:15.939473+00:00",
+  "endedUtc": "2026-09-28T21:10:35.217296+00:00",
+  "width": 1024,
+  "height": 1024,
+  "sha256": "d3933e817676f839ed6ae4e75c7ec46312480798e8719e171d876720bb131838",
+  "provenance": "AI-generated illustration; not proof of a real product or event.",
+  "reviewStatus": "pending",
+  "altText": "Conceptual illustration of a careful component swap that preserves the surrounding system"
+}

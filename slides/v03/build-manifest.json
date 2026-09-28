@@ -1,0 +1,1063 @@
+{
+  "schemaVersion": 1,
+  "version": "v03",
+  "builtUtc": "2026-09-28T21:37:48.565Z",
+  "node": "v24.19.0",
+  "pptxgenjs": "4.0.1",
+  "pptxSha256": "32df72899f99c7de4b68ed98d4a0ecc68b1e726d9e820fbaaea91e8dd8f9894c",
+  "slideCount": 12,
+  "geometry": [
+    {
+      "id": "S01",
+      "text": "Create a skill. Apply it. Test its limits. Reuse it",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S01",
+      "text": "CUSTOM SKILLS / FIVE LIVE DEMOS",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S01",
+      "text": "From Tribal Knowledge\nto Code",
+      "x": 0.65,
+      "y": 1.05,
+      "w": 8,
+      "h": 2,
+      "fontSize": 46
+    },
+    {
+      "id": "S01",
+      "text": "Custom Skills for\nGitHub Copilot Modernization",
+      "x": 0.68,
+      "y": 3.2,
+      "w": 7.7,
+      "h": 1,
+      "fontSize": 30
+    },
+    {
+      "id": "S01",
+      "text": "Bruno Capuano",
+      "x": 0.8400000000000001,
+      "y": 4.7299999999999995,
+      "w": 5.08,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S01",
+      "text": "One app. One skill. Five demos",
+      "x": 0.68,
+      "y": 5.45,
+      "w": 7.6,
+      "h": 0.6,
+      "fontSize": 27
+    },
+    {
+      "id": "S02",
+      "text": "A correct baseline is a valid result",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S02",
+      "text": "DEMO 1 / TRY THE TASK",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S02",
+      "text": "Modernize the library,\nkeep the behavior",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S02",
+      "text": "BASELINE CAPTURE: NOT-RUN",
+      "x": 0.88,
+      "y": 2.4299999999999997,
+      "w": 6.38,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S02",
+      "text": "Newtonsoft.Json",
+      "x": 0.94,
+      "y": 3.17,
+      "w": 6.2,
+      "h": 0.65,
+      "fontSize": 34
+    },
+    {
+      "id": "S02",
+      "text": "System.Text.Json",
+      "x": 0.94,
+      "y": 4.52,
+      "w": 6.2,
+      "h": 0.65,
+      "fontSize": 34
+    },
+    {
+      "id": "S02",
+      "text": "Working input\nInspect actual changes",
+      "x": 0.94,
+      "y": 5.28,
+      "w": 6.2,
+      "h": 0.97,
+      "fontSize": 26
+    },
+    {
+      "id": "S03",
+      "text": "Real requirements need examples and observable checks",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S03",
+      "text": "DEMO 2 / SYNTHETIC TEAM KNOWLEDGE",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S03",
+      "text": "Start with the explanations\nyour team repeats",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S03",
+      "text": "R1  Pricing exceptions",
+      "x": 0.85,
+      "y": 2.65,
+      "w": 6.65,
+      "h": 0.59,
+      "fontSize": 29
+    },
+    {
+      "id": "S03",
+      "text": "R2  JSON compatibility",
+      "x": 0.85,
+      "y": 3.4699999999999998,
+      "w": 6.65,
+      "h": 0.59,
+      "fontSize": 29
+    },
+    {
+      "id": "S03",
+      "text": "R3  Approved audit path",
+      "x": 0.85,
+      "y": 4.29,
+      "w": 6.65,
+      "h": 0.59,
+      "fontSize": 29
+    },
+    {
+      "id": "S03",
+      "text": "R4  Safe diagnostics",
+      "x": 0.85,
+      "y": 5.109999999999999,
+      "w": 6.65,
+      "h": 0.59,
+      "fontSize": 29
+    },
+    {
+      "id": "S04",
+      "text": "Keep the workflow focused and its references portable",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S04",
+      "text": "DEMO 2 / AUTHOR THE SKILL",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S04",
+      "text": "Build a reusable package",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S04",
+      "text": "SKILL.md",
+      "x": 0.98,
+      "y": 2.65,
+      "w": 6.2,
+      "h": 0.55,
+      "fontSize": 32
+    },
+    {
+      "id": "S04",
+      "text": "name: northwind-modernization",
+      "x": 0.98,
+      "y": 3.22,
+      "w": 6.2,
+      "h": 0.48,
+      "fontSize": 24
+    },
+    {
+      "id": "S04",
+      "text": "When to apply it\nWorkflow and references\nWhat evidence to report",
+      "x": 0.98,
+      "y": 4.28,
+      "w": 6.2,
+      "h": 1.65,
+      "fontSize": 28
+    },
+    {
+      "id": "S05",
+      "text": "A description supports selection, not guaranteed adherence",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S05",
+      "text": "DEMO 2 / REVIEW BEFORE REUSE",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S05",
+      "text": "When should it apply?\nWhat would convince us?",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S05",
+      "text": "Description",
+      "x": 0.97,
+      "y": 2.54,
+      "w": 3.8,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S05",
+      "text": "Relevant task and scope",
+      "x": 5.12,
+      "y": 2.54,
+      "w": 7.16,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S05",
+      "text": "Requirements",
+      "x": 0.97,
+      "y": 3.43,
+      "w": 3.8,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S05",
+      "text": "Concrete rules and examples",
+      "x": 5.12,
+      "y": 3.43,
+      "w": 7.16,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S05",
+      "text": "Workflow",
+      "x": 0.97,
+      "y": 4.32,
+      "w": 3.8,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S05",
+      "text": "Migration, repair or reuse",
+      "x": 5.12,
+      "y": 4.32,
+      "w": 7.16,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S05",
+      "text": "Evidence",
+      "x": 0.97,
+      "y": 5.21,
+      "w": 3.8,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S05",
+      "text": "Real checks and limitations",
+      "x": 5.12,
+      "y": 5.21,
+      "w": 7.16,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S06",
+      "text": "Inspect the real diff and run the same checks",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S06",
+      "text": "DEMO 3 / APPLY THE SKILL",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S06",
+      "text": "Same task.\nExplicit team context",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S06",
+      "text": "GUIDED CAPTURE: NOT-RUN",
+      "x": 0.88,
+      "y": 2.42,
+      "w": 6.38,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S06",
+      "text": "18 matching input files",
+      "x": 0.96,
+      "y": 3.4,
+      "w": 6.2,
+      "h": 0.56,
+      "fontSize": 29
+    },
+    {
+      "id": "S06",
+      "text": "+ 4 reviewed skill files",
+      "x": 0.96,
+      "y": 4.72,
+      "w": 6.2,
+      "h": 0.56,
+      "fontSize": 29
+    },
+    {
+      "id": "S06",
+      "text": "Fresh conversation. Explicit request",
+      "x": 0.96,
+      "y": 5.73,
+      "w": 6.2,
+      "h": 0.49,
+      "fontSize": 24
+    },
+    {
+      "id": "S06",
+      "text": "Assess",
+      "x": 8.66,
+      "y": 2.5700000000000003,
+      "w": 3.43,
+      "h": 0.51,
+      "fontSize": 28
+    },
+    {
+      "id": "S06",
+      "text": "Plan",
+      "x": 8.66,
+      "y": 3.5500000000000003,
+      "w": 3.43,
+      "h": 0.51,
+      "fontSize": 28
+    },
+    {
+      "id": "S06",
+      "text": "Change",
+      "x": 8.66,
+      "y": 4.53,
+      "w": 3.43,
+      "h": 0.51,
+      "fontSize": 28
+    },
+    {
+      "id": "S06",
+      "text": "Review",
+      "x": 8.66,
+      "y": 5.51,
+      "w": 3.43,
+      "h": 0.51,
+      "fontSize": 28
+    },
+    {
+      "id": "S07",
+      "text": "Deliberately introduced, not a captured Copilot mistake",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S07",
+      "text": "DEMO 4 / INTRODUCE A TEACHING BUG",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S07",
+      "text": "One option.\nA broken contract",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S07",
+      "text": "THE CONTRACT",
+      "x": 1,
+      "y": 2.72,
+      "w": 5,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S07",
+      "text": "\"review_note\": null",
+      "x": 1,
+      "y": 3.62,
+      "w": 5,
+      "h": 0.75,
+      "fontSize": 28
+    },
+    {
+      "id": "S07",
+      "text": "Required field\nOptional value",
+      "x": 1,
+      "y": 4.78,
+      "w": 5,
+      "h": 0.88,
+      "fontSize": 26
+    },
+    {
+      "id": "S07",
+      "text": "THE TEACHING BUG",
+      "x": 7.02,
+      "y": 2.72,
+      "w": 5,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S07",
+      "text": "WhenWritingNull",
+      "x": 7.02,
+      "y": 3.62,
+      "w": 5,
+      "h": 0.75,
+      "fontSize": 29
+    },
+    {
+      "id": "S07",
+      "text": "Property disappears\nThe assertion catches it",
+      "x": 7.02,
+      "y": 4.78,
+      "w": 5,
+      "h": 0.88,
+      "fontSize": 26
+    },
+    {
+      "id": "S08",
+      "text": "Skills carry intent. Tests detect defined regressions",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S08",
+      "text": "DEMO 4 / REPAIR AND VERIFY",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S08",
+      "text": "Keep the test.\nRepair the implementation",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S08",
+      "text": "Reproduce",
+      "x": 0.94,
+      "y": 2.92,
+      "w": 3.21,
+      "h": 0.65,
+      "fontSize": 32
+    },
+    {
+      "id": "S08",
+      "text": "Read the actual\nfailed assertion",
+      "x": 0.94,
+      "y": 3.92,
+      "w": 3.21,
+      "h": 1.04,
+      "fontSize": 25
+    },
+    {
+      "id": "S08",
+      "text": "Repair",
+      "x": 5.06,
+      "y": 2.92,
+      "w": 3.21,
+      "h": 0.65,
+      "fontSize": 32
+    },
+    {
+      "id": "S08",
+      "text": "Restore null handling\nKeep the assertion",
+      "x": 5.06,
+      "y": 3.92,
+      "w": 3.21,
+      "h": 1.04,
+      "fontSize": 25
+    },
+    {
+      "id": "S08",
+      "text": "Verify",
+      "x": 9.180000000000001,
+      "y": 2.92,
+      "w": 3.21,
+      "h": 0.65,
+      "fontSize": 32
+    },
+    {
+      "id": "S08",
+      "text": "Same test, then\nthe full suite",
+      "x": 9.180000000000001,
+      "y": 3.92,
+      "w": 3.21,
+      "h": 1.04,
+      "fontSize": 25
+    },
+    {
+      "id": "S08",
+      "text": "Prepared red / green exercise, not agent-performance evidence",
+      "x": 0.8,
+      "y": 5.67,
+      "w": 11.7,
+      "h": 0.62,
+      "fontSize": 24
+    },
+    {
+      "id": "S09",
+      "text": "Reuse output options, not another wall of instructions",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S09",
+      "text": "DEMO 5 / REUSE THE KNOWLEDGE",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S09",
+      "text": "A new task.\nThe same contract",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S09",
+      "text": "Two existing responses",
+      "x": 0.98,
+      "y": 2.83,
+      "w": 4.98,
+      "h": 0.56,
+      "fontSize": 29
+    },
+    {
+      "id": "S09",
+      "text": "One JSON array",
+      "x": 7.24,
+      "y": 2.83,
+      "w": 4.93,
+      "h": 0.56,
+      "fontSize": 29
+    },
+    {
+      "id": "S09",
+      "text": "Same output options\nSame per-item contract",
+      "x": 0.98,
+      "y": 4.2,
+      "w": 5.12,
+      "h": 1.28,
+      "fontSize": 30
+    },
+    {
+      "id": "S09",
+      "text": "Order stays intact\nEmpty input: []\nNull input: reject",
+      "x": 7.24,
+      "y": 4.12,
+      "w": 4.95,
+      "h": 1.63,
+      "fontSize": 27
+    },
+    {
+      "id": "S09",
+      "text": "No changes to CLI, pricing or audit",
+      "x": 0.98,
+      "y": 5.8,
+      "w": 11.3,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S10",
+      "text": "Context guides the work; evidence supports the review",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S10",
+      "text": "RECAP / WHAT YOU JUST USED",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S10",
+      "text": "Four tools, different jobs",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S10",
+      "text": "Prompt",
+      "x": 0.97,
+      "y": 2.54,
+      "w": 3.5,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S10",
+      "text": "Immediate task",
+      "x": 4.6,
+      "y": 2.54,
+      "w": 7.7,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S10",
+      "text": "Instructions",
+      "x": 0.97,
+      "y": 3.43,
+      "w": 3.5,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S10",
+      "text": "Broad project conventions",
+      "x": 4.6,
+      "y": 3.43,
+      "w": 7.7,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S10",
+      "text": "Skill",
+      "x": 0.97,
+      "y": 4.32,
+      "w": 3.5,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S10",
+      "text": "Relevant workflow and resources",
+      "x": 4.6,
+      "y": 4.32,
+      "w": 7.7,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S10",
+      "text": "Tests",
+      "x": 0.97,
+      "y": 5.21,
+      "w": 3.5,
+      "h": 0.55,
+      "fontSize": 29
+    },
+    {
+      "id": "S10",
+      "text": "Observable behavior",
+      "x": 4.6,
+      "y": 5.21,
+      "w": 7.7,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "id": "S11",
+      "text": "Pick one task. Capture one rule. Check it. Reuse it",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S11",
+      "text": "YOUR NEXT STEP / ONE REPEATED EXPLANATION",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S11",
+      "text": "Make it a team practice",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S11",
+      "text": "Version + own",
+      "x": 1.07,
+      "y": 2.65,
+      "w": 4.96,
+      "h": 0.56,
+      "fontSize": 30
+    },
+    {
+      "id": "S11",
+      "text": "One accountable owner",
+      "x": 1.07,
+      "y": 3.32,
+      "w": 4.96,
+      "h": 0.42,
+      "fontSize": 24
+    },
+    {
+      "id": "S11",
+      "text": "Review",
+      "x": 7.27,
+      "y": 2.65,
+      "w": 4.96,
+      "h": 0.56,
+      "fontSize": 30
+    },
+    {
+      "id": "S11",
+      "text": "Intent, examples, tests",
+      "x": 7.27,
+      "y": 3.32,
+      "w": 4.96,
+      "h": 0.42,
+      "fontSize": 24
+    },
+    {
+      "id": "S11",
+      "text": "Reuse",
+      "x": 7.27,
+      "y": 4.76,
+      "w": 4.96,
+      "h": 0.56,
+      "fontSize": 30
+    },
+    {
+      "id": "S11",
+      "text": "Another small change",
+      "x": 7.27,
+      "y": 5.43,
+      "w": 4.96,
+      "h": 0.42,
+      "fontSize": 24
+    },
+    {
+      "id": "S11",
+      "text": "Maintain",
+      "x": 1.07,
+      "y": 4.76,
+      "w": 4.96,
+      "h": 0.56,
+      "fontSize": 30
+    },
+    {
+      "id": "S11",
+      "text": "Learn from real failures",
+      "x": 1.07,
+      "y": 5.43,
+      "w": 4.96,
+      "h": 0.42,
+      "fontSize": 24
+    },
+    {
+      "id": "S12",
+      "text": "Create a skill. Apply it. Test its limits. Reuse it",
+      "x": 0.81,
+      "y": 6.569999999999999,
+      "w": 11.68,
+      "h": 0.5,
+      "fontSize": 24
+    },
+    {
+      "id": "S12",
+      "text": "RESOURCES / Q&A",
+      "x": 0.65,
+      "y": 0.32,
+      "w": 11.9,
+      "h": 0.43,
+      "fontSize": 24
+    },
+    {
+      "id": "S12",
+      "text": "Try the five-demo workflow",
+      "x": 0.65,
+      "y": 0.87,
+      "w": 12,
+      "h": 1.36,
+      "fontSize": 38
+    },
+    {
+      "id": "S12",
+      "text": "The complete local demo kit",
+      "x": 0.99,
+      "y": 2.67,
+      "w": 11.3,
+      "h": 0.58,
+      "fontSize": 30
+    },
+    {
+      "id": "S12",
+      "text": "github.com/elbruno/GitHubCopilotModernizationSamples",
+      "x": 0.99,
+      "y": 3.38,
+      "w": 11.3,
+      "h": 0.5,
+      "fontSize": 25
+    },
+    {
+      "id": "S12",
+      "text": "Official agent skills docs",
+      "x": 0.99,
+      "y": 4.65,
+      "w": 8.7,
+      "h": 0.6,
+      "fontSize": 30
+    },
+    {
+      "id": "S12",
+      "text": "docs.github.com",
+      "x": 0.99,
+      "y": 5.37,
+      "w": 8.7,
+      "h": 0.5,
+      "fontSize": 26
+    },
+    {
+      "id": "S12",
+      "text": "Q&A",
+      "x": 9.55,
+      "y": 4.62,
+      "w": 2.8,
+      "h": 1.12,
+      "fontSize": 56
+    }
+  ],
+  "slides": [
+    {
+      "id": "S01",
+      "title": "From Tribal Knowledge\nto Code",
+      "notes": "S01 | elapsed 0-3 minutes | Set the challenge\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Introduce yourself and the recurring explanation: it works, but we do not do it that way here\n- One synthetic .NET app, one reusable skill and five demos; slides are bookmarks, not the main event\n- The app is local; independent Copilot generation needs an enabled account and network\n- Prepared checkpoints and reference tests are real, but are not independent agent captures\nShow: Title, local presenter photo, then the small app tree\nEvidence: Seven labeled teaching checkpoints; generation status remains not-run\nTransition: First, state only the technology change\nFallback: Keep the introduction to one minute if the host handoff runs long\nSource: demos/v03/session.json\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S02",
+      "title": "Modernize the library,\nkeep the behavior",
+      "notes": "S02 | elapsed 3-8 minutes | Task without the organizational skill\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Open 01-baseline alone in a fresh conversation and run its smoke tests and partner request\n- Point out total 270, explicit null and the separate audit event; the starting app works\n- Explain the midpoint example: 100.05 subtotal minus 10.01 discount plus 12 shipping equals 102.04\n- Paste prompts/01-baseline.txt exactly; inspect actual changes without presuming a failure\n- At minute 8 move on; do not spend the session waiting on one generation\nShow: 01-baseline source, real terminal output and the exact baseline prompt\nCheckpoint: 01-baseline\nExact prompt: prompts/01-baseline.txt\nEvidence: Legacy behavior is already correct; only real generated output can count as an agent result\nTransition: Now package the team's intent rather than repeating it in every prompt\nFallback: After 60-90 seconds of unproductive waiting, show 04-reference and identify it as prepared\nSource: prompts/01-baseline.txt\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S03",
+      "title": "Start with the explanations\nyour team repeats",
+      "notes": "S03 | elapsed 8-10 minutes | Build and review the skill with Copilot\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Switch to 02-author-skill, which has legacy code and synthetic team notes but no prewritten project skill\n- Highlight pricing exceptions, wire compatibility, audit conventions and safe diagnostics\n- The source already contains clues; the task is to make intent discoverable, not invent policy\n- Use demos/v03/prompts/02-author-skill.txt to ask Copilot to author guidance only, not change application code\nShow: knowledge/team-notes.md beside the small source tree\nCheckpoint: 02-author-skill\nExact prompt: demos/v03/prompts/02-author-skill.txt\nEvidence: Four synthetic requirements mapped to R1-R4\nTransition: Give this knowledge a portable home\nFallback: Read one null-field note aloud and use the prepared skill to explain its translation\nSource: knowledge/team-notes.md\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S04",
+      "title": "Build a reusable package",
+      "notes": "S04 | elapsed 10-14 minutes | Build and review the skill with Copilot\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Show the actual skill Copilot created, or explicitly switch to the prepared version\n- Explain name and task-specific description, then inspect-first steps and concrete examples\n- Keep references inside the skill directory so the exported package has no broken links\n- Reject broad tool permissions, invented requirements and unrelated implementation changes\nShow: .github/skills/northwind-modernization/SKILL.md and its references directory\nCheckpoint: 02-author-skill\nExact prompt: demos/v03/prompts/02-author-skill.txt\nEvidence: Documented repository skill structure; the package has four files\nTransition: Before using generated guidance, review it like code\nFallback: Open the reviewed skill in 03-guided; call it prepared and explain one rule live\nSource: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S05",
+      "title": "When should it apply?\nWhat would convince us?",
+      "notes": "S05 | elapsed 14-18 minutes | Build and review the skill with Copilot\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Check that the description covers migration, contract repair and small serialization reuse\n- Inspect an actionable R2 rule: explicit null property, good and bad examples, unchanged assertion\n- Review migration versus repair versus reuse branches so unrelated tasks do not trigger dependency changes\n- Announce the prepared reviewed skill handoff into 03-guided instead of silently substituting files\n- A live-authored variation is fine for teaching, but is not the predefined comparison input\nShow: Skill frontmatter, concrete traps, workflow branches and review checklist\nCheckpoint: 02-author-skill\nExact prompt: demos/v03/prompts/02-author-skill.txt\nEvidence: Skill text and real tests, not claims about hidden activation telemetry\nTransition: Start again with the same input and explicit team context\nFallback: Use the prepared checklist and stop the skill-authoring segment at minute 18\nSource: .github/skills/northwind-modernization/SKILL.md\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S06",
+      "title": "Same task.\nExplicit team context",
+      "notes": "S06 | elapsed 18-30 minutes | Apply the skill to modernization\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Use 03-guided as its own project and a fresh conversation, never the parent folder\n- Show the 18 matching legacy source/test files and four added skill files\n- Paste prompts/02-guided.txt; it explicitly requests the skill\n- Show only activation or file-access evidence the host actually exposes; availability alone is not use\n- Run visible tests and external evaluation if there is a completed candidate\n- Do not replace a candidate with the reference and call it generated output\nShow: Guided prompt, skill, real diff, test output and scripts/evaluate.ps1\nCheckpoint: 03-guided\nExact prompt: prompts/02-guided.txt\nEvidence: Baseline and guided independent captures are currently not-run; no claimed winner\nTransition: A good skill still needs a way to catch mistakes\nFallback: Run real tests in 04-reference and label it authored reference; move on at minute 30\nSource: prompts/02-guided.txt\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S07",
+      "title": "One option.\nA broken contract",
+      "notes": "S07 | elapsed 30-32 minutes | Reproduce and repair a deliberate contract regression\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Disclose the intentional regression before showing the red test\n- Open 05-null-regression and show WhenWritingNull in the serializer options\n- Run SerializationTests.PreservesExplicitNull with a build of current code\n- Read the real assertion about review_note existing even when its value is null\nShow: Faulted setting and unchanged null-contract test\nCheckpoint: 05-null-regression\nExact prompt: demos/v03/prompts/04-repair.txt\nEvidence: Scripted rehearsal observes the exact intended assertion, not an arbitrary nonzero exit\nTransition: Use the skill to explain and repair the mismatch\nFallback: The broken checkpoint is already prepared; do not break the source repository\nSource: tests/Northwind.UnitTests/SerializationTests.cs\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S08",
+      "title": "Keep the test.\nRepair the implementation",
+      "notes": "S08 | elapsed 32-37 minutes | Reproduce and repair a deliberate contract regression\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Paste demos/v03/prompts/04-repair.txt and require reproduction before changes\n- Reject removing or weakening the assertion as a fix\n- After the minimal repair, run the exact same focused test and then the full suite\n- If using set-demo-null-rule.ps1, disclose the scripted repair rather than calling it agent-generated\n- These finite checks do not guarantee universal compliance\nShow: Focused failure, serializer repair, same test passing and full-suite result\nCheckpoint: 05-null-regression\nExact prompt: demos/v03/prompts/04-repair.txt\nEvidence: Actual prepared-fixture red/green rehearsal; no fabricated agent run\nTransition: Can the same skill help with a different task?\nFallback: Use the guarded scripted repair and show real tests; hard stop at minute 37\nSource: scripts/set-demo-null-rule.ps1\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S09",
+      "title": "A new task.\nThe same contract",
+      "notes": "S09 | elapsed 37-45 minutes | Reuse the skill for batch serialization\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Start a fresh conversation in 06-reuse-start and paste demos/v03/prompts/05-reuse.txt\n- Add WriteBatch for existing responses without changing CLI, pricing, audit or dependencies\n- Preserve item order, field names, string enums, numeric money and explicit null\n- Check empty input produces an array and a null collection throws\n- Check actual executed test counts; a filter matching zero tests is not success\n- Prepared 07-reuse-complete has three focused tests and the full contract suite\nShow: Small batch method and focused per-item equivalence tests\nCheckpoint: 06-reuse-start\nExact prompt: demos/v03/prompts/05-reuse.txt\nEvidence: Existing CLI, domain and audit source stay hash-identical in the prepared reuse checkpoint\nTransition: Name the pieces you just watched work together\nFallback: At the cutoff, switch to 07-reuse-complete, disclose it and run its real tests\nSource: demos/v03/prompts/05-reuse.txt\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S10",
+      "title": "Four tools, different jobs",
+      "notes": "S10 | elapsed 45-47 minutes | Context choices and team ownership\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- The prompt stated the immediate task\n- Instructions supplied broad project conventions\n- The skill supplied a relevant workflow, examples and resources\n- Tests checked observable cases; a person still reviewed scope and intent\n- Keep this recap short: attendees have already seen the distinctions live\nShow: Prompt, instructions, skill package and test files as concrete examples\nEvidence: Different files with distinct responsibilities\nTransition: Make the skill a maintained team asset\nFallback: Give the four definitions in one sentence and protect Q&A\nSource: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S11",
+      "title": "Make it a team practice",
+      "notes": "S11 | elapsed 47-50 minutes | Context choices and team ownership\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Version the skill with the code, give it an owner and review changes\n- Update examples and tests when the business contract changes\n- Start with a narrow task rather than a company-wide standards catalog\n- Close with one repeated explanation the attendee can encode tomorrow\nShow: Editable ownership/review/reuse/maintenance loop\nEvidence: Maintenance checklist rather than a promise of deterministic generation\nTransition: Here is the complete kit; what would your first skill capture?\nFallback: Close in one minute if needed; reach resources at minute 50\nSource: docs/maintenance.md\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation."
+    },
+    {
+      "id": "S12",
+      "title": "Try the five-demo workflow",
+      "notes": "S12 | elapsed 50-60 minutes | Resources and protected Q&A\nDesigned timing, not a measured human rehearsal. All application data, people and policies are synthetic.\n- Keep the public sample and official documentation visible for the protected ten-minute Q&A\n- The repository includes seven local checkpoints, exact prompts, real tests, notes and fallbacks\n- Publication must be verified independently of generation and deck QA\n- A correct baseline or imperfect guided run is legitimate; no forced success story\n- Human rehearsal and actual independent agent captures remain separate pending activities\nShow: Public sample URL and official agent-skills link\nEvidence: Use the publication receipt and signed-out access check, not a guessed URL\nTransition: What is one rule your team keeps explaining?\nFallback: If audience access fails, share official docs and resolve sample access after the session\nSource: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills\nPresenter commands and spoken cues: demos/v03/runbook.md and demos/v03/demo-script.md\nVisuals: original conceptual Flare illustrations, not screenshots, agent evidence or official product artwork. Presenter supplied the local headshot; it was not uploaded for generation.\nhttps://github.com/elbruno/GitHubCopilotModernizationSamples\nhttps://docs.github.com/en/copilot/concepts/agents/about-agent-skills"
+    }
+  ],
+  "images": [
+    {
+      "id": "skill-toolkit",
+      "sha256": "7765f5e595ead592bf7b4aa28abff791321335a9b9e2c06db226744146bd75d3",
+      "review": "Clear toolkit metaphor, readable at reduced size, no text or logos, complete subject in frame"
+    },
+    {
+      "id": "knowledge-transfer",
+      "sha256": "fc6f6b8cb03b5557d84a874fbcdc44ddcf912adc4861992c85d55012b6b503a1",
+      "review": "Notes-to-guide story clear, blank speech bubbles/cards, no invented UI; side margins narrower than requested but no clipping"
+    },
+    {
+      "id": "careful-migration",
+      "sha256": "d3933e817676f839ed6ae4e75c7ec46312480798e8719e171d876720bb131838",
+      "review": "Precise component swap, surrounding assembly intact, clear silhouette; no implied test result"
+    }
+  ],
+  "headshot": {
+    "path": "../resources/Bruno Capuano - Headshot.jpg",
+    "sha256": "19814acf8cfde1709564db6613268264df5c651b8aa6099ba6082eba0c67e36b",
+    "provenance": "Provided by the presenter for inclusion in the presenter introduction",
+    "handling": "Embedded locally; not uploaded to an image-generation service"
+  },
+  "sources": [
+    {
+      "file": "slides/v03/content.mjs",
+      "sha256": "5a6b86e924a2644bd957391b331a8597a5282ef7d87eb1d23e95e8a8ee1e3fee"
+    },
+    {
+      "file": "slides/v03/generate.mjs",
+      "sha256": "5fb0651995d3cb9c945f99c67b992e5fe754dcbaf50468f22c34355f04583eeb"
+    },
+    {
+      "file": "demos/v03/session.json",
+      "sha256": "0ca654acc27fc66ab7cdf14db2afd9188c2493ff00a25e609ecdf1c9997b61a4"
+    },
+    {
+      "file": "slides/v02/asset-review.json",
+      "sha256": "665f7928ac6e91e6eca98671498244f277c2e9fc378f9062f252e0284f6778a5"
+    },
+    {
+      "file": ".github/skills/northwind-modernization/SKILL.md",
+      "sha256": "a7b9934b171a6bf1b9d5feb8f78abfd935119e9be5cd0340b2add799315efe1d"
+    }
+  ]
+}

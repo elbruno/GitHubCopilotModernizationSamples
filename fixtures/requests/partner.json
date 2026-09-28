@@ -1,0 +1,9 @@
+{
+  "order_id": "ORDER-001",
+  "customer_id": "SYNTH-CUSTOMER-001",
+  "customer_email": "demo@example.invalid",
+  "customer_type": "partner",
+  "unit_price": 100.00,
+  "quantity": 3,
+  "correlation_id": "DEMO-001"
+}

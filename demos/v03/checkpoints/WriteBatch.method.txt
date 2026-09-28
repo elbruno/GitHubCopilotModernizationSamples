@@ -1,0 +1,5 @@
+    public static string WriteBatch(IReadOnlyList<QuoteResponse> responses)
+    {
+        ArgumentNullException.ThrowIfNull(responses);
+        return JsonSerializer.Serialize(responses, OutputOptions);
+    }

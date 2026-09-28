@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "status": "not-run",
+  "runType": "baseline",
+  "reason": "Independent session and neutral host context have not been established. No agent output is stored here."
+}

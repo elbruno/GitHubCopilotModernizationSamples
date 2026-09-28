@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "status": "not-run",
+  "runType": "guided",
+  "reason": "Independent session and neutral host context have not been established. The reference is not a guided capture."
+}

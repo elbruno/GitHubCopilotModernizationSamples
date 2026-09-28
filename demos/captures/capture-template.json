@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "not-run",
+  "runType": "baseline",
+  "runId": null,
+  "startedUtc": null,
+  "endedUtc": null,
+  "host": null,
+  "hostVersion": null,
+  "agentMode": null,
+  "model": null,
+  "configuration": null,
+  "isolation": "unverified",
+  "prompt": null,
+  "inputManifestSha256": null,
+  "skillAvailability": null,
+  "skillUseEvidence": null,
+  "commands": [],
+  "humanIntervention": [],
+  "provenance": null,
+  "outputFiles": [],
+  "review": {
+    "status": "not-run",
+    "reviewer": null,
+    "notes": null
+  }
+}

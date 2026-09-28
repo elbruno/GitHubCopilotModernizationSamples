@@ -1,0 +1,7 @@
+Use the northwind-modernization skill to diagnose the failing
+SerializationTests.PreservesExplicitNull test in this disposable teaching copy.
+This regression was deliberately introduced by the presenter; it is not an
+observed Copilot failure. Run the test first and report the actual assertion.
+Make the smallest implementation repair that preserves R2. Do not weaken the
+test, change pricing, add logs or touch dependencies. Run the unchanged test,
+then the full solution tests, and report real results and remaining risks.

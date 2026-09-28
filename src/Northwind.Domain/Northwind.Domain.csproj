@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Audit\Northwind.Audit.csproj" />
+  </ItemGroup>
+</Project>

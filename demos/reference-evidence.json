@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "provenance": "authored reference implementation, not independent agent output",
+  "evaluatedUtc": "2026-09-28T20:58:03.4991549Z",
+  "status": "pass",
+  "criteria": [
+    {
+      "path": "scripts/evaluate.ps1",
+      "sha256": "e83427a7137382f3ccbe910054627cf63ff10eac8ca67c1f5dabacc151a4a63e"
+    },
+    {
+      "path": "tests/Northwind.AcceptanceTests/ContractTests.cs",
+      "sha256": "f3739eb6b038c0528b05ef78fbb19049c1fc54c6427304a8b7e4852e153729bc"
+    },
+    {
+      "path": "tests/Northwind.AcceptanceTests/Northwind.AcceptanceTests.csproj",
+      "sha256": "39e69ff4e5af2926d43ef87e97a3c0aaf07d3e75c8c239838b8b56bb97c3821f"
+    }
+  ],
+  "checks": [
+    {
+      "name": "restore",
+      "status": "pass",
+      "detail": "Locked restore succeeded."
+    },
+    {
+      "name": "build",
+      "status": "pass",
+      "detail": "Candidate solution built."
+    },
+    {
+      "name": "visible-tests",
+      "status": "pass",
+      "detail": "Executed 61 visible tests; failed 0. See visible-tests.log."
+    },
+    {
+      "name": "migration",
+      "status": "pass",
+      "detail": "Checked built dependency graph and source project references."
+    },
+    {
+      "name": "acceptance",
+      "status": "pass",
+      "detail": "R1-R4 process checks: 54/54 passed; see acceptance.trx."
+    },
+    {
+      "name": "audit-structure",
+      "status": "pass",
+      "detail": "Source heuristic: interface + call present; no domain Console logging. Human review still required."
+    }
+  ],
+  "scope": "Automated checks only; human source review and delivery approval remain separate"
+}

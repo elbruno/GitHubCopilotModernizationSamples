@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-09-28T20:47:49.3964081Z",
+  "framing": "contextual walkthrough or not-run; controlled comparison not established",
+  "runs": [
+    {
+      "run": "baseline",
+      "status": "not-run",
+      "detail": "Independent session and neutral host context have not been established. No agent output is stored here.",
+      "checks": [],
+      "changedFiles": [],
+      "metadata": null
+    },
+    {
+      "run": "guided",
+      "status": "not-run",
+      "detail": "Independent session and neutral host context have not been established. The reference is not a guided capture.",
+      "checks": [],
+      "changedFiles": [],
+      "metadata": null
+    }
+  ]
+}

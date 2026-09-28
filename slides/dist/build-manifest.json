@@ -1,0 +1,802 @@
+{
+  "schemaVersion": 1,
+  "builtUtc": "2026-09-28T20:52:22.353Z",
+  "node": "v24.19.0",
+  "pptxgenjs": "4.0.1",
+  "pptxSha256": "4f00108d98be982dfc06a435243d56b46aca99f56c5d29d037b4fe41e8d2592b",
+  "slideCount": 12,
+  "status": "built; native and visual review recorded separately",
+  "sources": [
+    {
+      "file": "slides/content.mjs",
+      "sha256": "362231a84304ad87a391406ecf7257ea40f32128e4b8cc662535935ef1dad519"
+    },
+    {
+      "file": "slides/generate.mjs",
+      "sha256": "0740b40d2725014be67e20fac4feabea7c05992b3e4db70f69e7d984b54e32ea"
+    },
+    {
+      "file": "src/Northwind.Quotes/QuoteJson.cs",
+      "sha256": "8da597a6160f4894b9537abf49e7b924aa9cbfc4922c3d1436f5da839ea1a09e"
+    },
+    {
+      "file": ".github/skills/northwind-modernization/SKILL.md",
+      "sha256": "29c3a8b40b4a4a347a109aa7c5affdacc702f8a8e602e584dbbdc1863c3be3b6"
+    }
+  ],
+  "slides": [
+    {
+      "id": "S01",
+      "title": "From Tribal Knowledge\nto Code",
+      "notes": "S01 | elapsed 0-3 minutes | Target: 3 minutes including host introduction\nAll application people, data, rules, and the audit component are synthetic.\n- Every team has someone who says: yes, that code works, but we do not do it that way here\n- Today we turn one of those explanations into explicit guidance and observable checks\n- This is a synthetic .NET dependency/API migration, not an Azure migration\nShow: PowerPoint title slide; keep unrelated desktop windows off the shared screen\nEvidence: The runnable reference and legacy sample are real; independent Copilot captures are not-run\nTransition: Let us start with a question: it compiles, but is it right for us?\nFallback: If the host handoff runs long, keep this introduction to one sentence\nSource: docs/product-notes.md"
+    },
+    {
+      "id": "S02",
+      "title": "It compiles. Is it right for us?",
+      "notes": "S02 | elapsed 3-5 minutes | Target: 2 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Ask who has seen a successful build hide a business regression\n- A partner quote for 33.35 times three should total 102.04, not just compile\n- Show the rounding test early: the reference demonstrates a behavior, not agent superiority\nShow: tests/Northwind.UnitTests/PricingTests.cs, midpoint case\nEvidence: Concrete decimal rounding assertion and expected total 102.04\nTransition: What are the explanations our team repeats when reviewing that change?\nFallback: Read the test from the file without starting a process\nSource: tests/Northwind.UnitTests/PricingTests.cs"
+    },
+    {
+      "id": "S03",
+      "title": "The rules that never made it\ninto the prompt",
+      "notes": "S03 | elapsed 5-7 minutes | Target: 2 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Introduce the fictional Northwind Outfitters Quote Service\n- Partner discounts start at three; shipping follows the discounted net\n- Consumers expect lowercase strings and an explicit null; logs must exclude customer data\n- These behaviors are visible in the legacy source; the skill makes them discoverable and repeatable\nShow: knowledge/team-notes.md beside the small source tree\nEvidence: Synthetic notes map to R1-R4 in knowledge/rules-catalog.md\nTransition: We do not need to paste everything into every prompt\nFallback: Use the four cards and tell one short fictional team story\nSource: knowledge/team-notes.md"
+    },
+    {
+      "id": "S04",
+      "title": "Put the right knowledge\nin the right place",
+      "notes": "S04 | elapsed 7-11 minutes | Target: 4 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- A prompt states today's desired change\n- Repository instructions describe conventions that apply broadly\n- A skill packages a relevant workflow and supporting examples\n- Tests define repeatable checks; people still decide whether the change is appropriate\nShow: .github/copilot-instructions.md, then the skill directory\nEvidence: Separate files with separate responsibilities; no domain-rule wall in general instructions\nTransition: First, let us give the migration task without adding the specialized context\nFallback: Explain the distinction directly from this slide; no host feature depends on it\nSource: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills"
+    },
+    {
+      "id": "S05",
+      "title": "First pass: modernize the technology",
+      "notes": "S05 | elapsed 11-19 minutes | Target: 8 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Open the isolated baseline root in a fresh app conversation, not this authoring repository\n- Show the tiny working app, one request, and the exact prepared baseline prompt\n- Review any real result fairly; a correct baseline is a valid outcome\n- If no independent run exists, explicitly switch to the legacy/reference walkthrough\nShow: Isolated baseline root; prompts/01-baseline.txt; src/Northwind.Quotes/QuoteJson.cs\nEvidence: Input manifest and real output only; never call the reference a baseline capture\nTransition: Now let us take one repeated explanation and make it actionable\nFallback: After 60-90 seconds, say: this is the prepared reference, not a captured Copilot run\nSource: prompts/01-baseline.txt"
+    },
+    {
+      "id": "S06",
+      "title": "Turn one rule into actionable guidance",
+      "notes": "S06 | elapsed 19-23 minutes | Target: 4 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Start with the fictional integration note: an absent review note still has a property\n- Explain the difference between a preference and an observable contract\n- Show the real serializer setting and the acceptance assertion\n- Give one bad counterexample: ignoring nulls can silently change the response shape\nShow: src/Northwind.Quotes/QuoteJson.cs and tests/Northwind.AcceptanceTests/ContractTests.cs\nEvidence: Actual JsonIgnoreCondition.Never source excerpt; explicit null assertion\nTransition: That rule is useful; the surrounding workflow makes it reusable\nFallback: The slide's source excerpt is copied directly by the generator\nSource: src/Northwind.Quotes/QuoteJson.cs"
+    },
+    {
+      "id": "S07",
+      "title": "A skill is more than a long prompt",
+      "notes": "S07 | elapsed 23-27 minutes | Target: 4 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Show the actual name and task-specific activation description\n- The supporting references stay inside the skill package so exported links work\n- Official docs describe relevance-based loading; this does not guarantee correct application\n- The general app agent is the prepared route; dedicated Upgrade integration is unverified here\nShow: .github/skills/northwind-modernization/SKILL.md and references/review-checklist.md\nEvidence: Installed CLI skill inventory detects the project skill; that is not per-run activation telemetry\nTransition: Now start again from the same input, with the skill supplied\nFallback: Open the files directly and disclose any explicit request to use the skill\nSource: .github/skills/northwind-modernization/SKILL.md"
+    },
+    {
+      "id": "S08",
+      "title": "Same task. Explicit organizational context",
+      "notes": "S08 | elapsed 27-41 minutes | Target: 14 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Open the separately exported guided root in a fresh conversation\n- Show matching starting source/test manifests and the four added skill files\n- Paste the exact guided prompt and inspect available evidence of skill use without inventing logs\n- Evaluate both results with the same external criteria; preserve failures and interventions\nShow: Guided root; prompts/02-guided.txt; external scripts/compare.ps1\nEvidence: Identical starting source, smoke tests and prompt core; different supplied context\nTransition: Let us compare evidence rather than impressions\nFallback: Use the reference walkthrough with unit/acceptance tests; say no independent guided output was captured\nSource: scripts/export-demo.ps1"
+    },
+    {
+      "id": "S09",
+      "title": "What we will compare",
+      "notes": "S09 | elapsed 41-44 minutes | Target: 3 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Both independent capture manifests currently say not-run\n- Show the real not-run report rather than a placeholder success table\n- The reference passes defined checks but is not evidence of generated-agent performance\n- If both future candidates pass, show that; if guided fails, preserve and diagnose it\nShow: demos/captures/baseline.json, guided.json; actual comparison.md\nEvidence: Four allowed statuses: pass, fail, not-run, blocked; finite checks are not a compliance guarantee\nTransition: The reusable asset is not a winning screenshot; it is a shared team practice\nFallback: Keep the checklist and explicitly say the independent experiment has not run\nSource: scripts/compare.ps1"
+    },
+    {
+      "id": "S10",
+      "title": "From one developer to team practice",
+      "notes": "S10 | elapsed 44-47 minutes | Target: 3 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Put the skill and examples under source control with the code they guide\n- Assign an owner and update examples when the contract changes\n- Review skills as executable-workflow guidance, including scripts and tool permissions\n- The optional reuse prompt is a stretch exercise, not a second application\nShow: docs/maintenance.md; optionally prompts/04-reuse.txt without executing it\nEvidence: Rule-to-test ownership and change checklist, not promised deterministic generation\nTransition: You can start much smaller than a complete company standards catalog\nFallback: Cut the optional reuse explanation if time is short\nSource: docs/maintenance.md"
+    },
+    {
+      "id": "S11",
+      "title": "Your first skill starts with\none repeated explanation",
+      "notes": "S11 | elapsed 47-50 minutes | Target: 3 minutes\nAll application people, data, rules, and the audit component are synthetic.\n- Choose one modernization task you already understand\n- Write down the rule you explain every code review\n- Add a good example, a counterexample, and evidence that would convince a reviewer\n- Reuse it on another small change and refine it from actual failures\nShow: Skill reference checklist; keep focus on the attendee's first next action\nEvidence: One actionable rule can be checked; a vague paragraph cannot\nTransition: Here are the resources and the three things I hope you take away\nFallback: Give the closing action verbatim and move to resources\nSource: .github/skills/northwind-modernization/references/review-checklist.md"
+    },
+    {
+      "id": "S12",
+      "title": "Try the workflow",
+      "notes": "S12 | elapsed 50-52 minutes | Target: 2 minutes, then keep visible for Q&A until minute 60\nAll application people, data, rules, and the audit component are synthetic.\n- The attendee repository is staged locally; its public URL must be verified before delivery\n- Official skills and upgrade documentation are linked in the notes and resources file\n- Close: pick one modernization task, capture one repeated rule, encode it in a skill, review, reuse\n- Keep this slide visible for Q&A; do not claim public availability until it is verified\nShow: docs/resources.md; Q&A answers in demos/runbook.md\nEvidence: Verified official links; no fabricated sample URL or QR code\nTransition: What is one rule your team keeps explaining?\nFallback: Direct attendees to the official docs; say the sample link will be supplied after access is verified\nSource: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills\nhttps://docs.github.com/en/copilot/concepts/agents/about-agent-skills\nhttps://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/overview"
+    }
+  ],
+  "geometry": [
+    {
+      "slide": 1,
+      "text": "Turn a repeated explanation into a reusable workflow",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 1,
+      "text": "From Tribal Knowledge\nto Code",
+      "x": 0.65,
+      "y": 0.65,
+      "w": 12,
+      "h": 1.6,
+      "fontSize": 42
+    },
+    {
+      "slide": 1,
+      "text": "Custom Skills for GitHub Copilot Modernization",
+      "x": 0.65,
+      "y": 2.55,
+      "w": 12,
+      "h": 0.6,
+      "fontSize": 28
+    },
+    {
+      "slide": 1,
+      "text": "Bruno Capuano",
+      "x": 0.65,
+      "y": 3.35,
+      "w": 11,
+      "h": 0.5,
+      "fontSize": 26
+    },
+    {
+      "slide": 1,
+      "text": "Team knowledge",
+      "x": 0.9,
+      "y": 4.63,
+      "w": 3.3,
+      "h": 0.64,
+      "fontSize": 26
+    },
+    {
+      "slide": 1,
+      "text": "Actionable skill",
+      "x": 5.0200000000000005,
+      "y": 4.63,
+      "w": 3.3,
+      "h": 0.64,
+      "fontSize": 26
+    },
+    {
+      "slide": 1,
+      "text": "Reviewable change",
+      "x": 9.14,
+      "y": 4.63,
+      "w": 3.3,
+      "h": 0.64,
+      "fontSize": 26
+    },
+    {
+      "slide": 2,
+      "text": "It compiles. Is it right for us?",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 2,
+      "text": "A successful build answers only one question",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 2,
+      "text": "Technical\ncorrectness",
+      "x": 0.9,
+      "y": 2.68,
+      "w": 3.3,
+      "h": 1.8400000000000003,
+      "fontSize": 28
+    },
+    {
+      "slide": 2,
+      "text": "Business\ncorrectness",
+      "x": 5.0200000000000005,
+      "y": 2.68,
+      "w": 3.3,
+      "h": 1.8400000000000003,
+      "fontSize": 28
+    },
+    {
+      "slide": 2,
+      "text": "Organizational\nfit",
+      "x": 9.14,
+      "y": 2.68,
+      "w": 3.3,
+      "h": 1.8400000000000003,
+      "fontSize": 28
+    },
+    {
+      "slide": 2,
+      "text": "33.35 x 3  |  Partner total: 102.04",
+      "x": 0.65,
+      "y": 5.1,
+      "w": 12,
+      "h": 0.6,
+      "fontSize": 28
+    },
+    {
+      "slide": 3,
+      "text": "The rules that never made it\ninto the prompt",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 3,
+      "text": "Existing source contains clues; the skill captures intent",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 3,
+      "text": "R1  Pricing exception",
+      "x": 0.9,
+      "y": 2.33,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 3,
+      "text": "R2  JSON contract",
+      "x": 7.0600000000000005,
+      "y": 2.33,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 3,
+      "text": "R3  Audit convention",
+      "x": 0.9,
+      "y": 4.18,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 3,
+      "text": "R4  Safe diagnostics",
+      "x": 7.0600000000000005,
+      "y": 4.18,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 4,
+      "text": "Put the right knowledge\nin the right place",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 4,
+      "text": "Assess  >  Plan  >  Change  >  Review",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 4,
+      "text": "Prompt\nImmediate task",
+      "x": 0.9,
+      "y": 2.33,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 4,
+      "text": "Instructions\nProject conventions",
+      "x": 7.0600000000000005,
+      "y": 2.33,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 4,
+      "text": "Skill\nSpecialized workflow",
+      "x": 0.9,
+      "y": 4.18,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 4,
+      "text": "Tests and CI\nExecutable checks",
+      "x": 7.0600000000000005,
+      "y": 4.18,
+      "w": 5.32,
+      "h": 1.1400000000000001,
+      "fontSize": 28
+    },
+    {
+      "slide": 5,
+      "text": "First pass: modernize the technology",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 5,
+      "text": "Same behavior. Inspect the actual diff",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 5,
+      "text": "Newtonsoft.Json",
+      "x": 0.9,
+      "y": 2.5300000000000002,
+      "w": 5.32,
+      "h": 1.54,
+      "fontSize": 32
+    },
+    {
+      "slide": 5,
+      "text": "System.Text.Json",
+      "x": 7.0600000000000005,
+      "y": 2.5300000000000002,
+      "w": 5.32,
+      "h": 1.54,
+      "fontSize": 32
+    },
+    {
+      "slide": 5,
+      "text": "Baseline capture: not-run",
+      "x": 0.65,
+      "y": 4.8,
+      "w": 12,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "slide": 5,
+      "text": "Fallback: explicitly labeled reference walkthrough",
+      "x": 0.65,
+      "y": 5.45,
+      "w": 12,
+      "h": 0.55,
+      "fontSize": 24
+    },
+    {
+      "slide": 6,
+      "text": "Turn one rule into actionable guidance",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 6,
+      "text": "When it applies + what to preserve + example + evidence",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 6,
+      "text": "Keep the optional field",
+      "x": 0.9,
+      "y": 2.3800000000000003,
+      "w": 5.32,
+      "h": 1.0899999999999999,
+      "fontSize": 28
+    },
+    {
+      "slide": 6,
+      "text": "\"review_note\": null",
+      "x": 7.06,
+      "y": 2.3800000000000003,
+      "w": 5.32,
+      "h": 1.0899999999999999,
+      "fontSize": 28
+    },
+    {
+      "slide": 6,
+      "text": "DefaultIgnoreCondition =\nJsonIgnoreCondition.Never",
+      "x": 0.9,
+      "y": 4.1,
+      "w": 11.5,
+      "h": 1.35,
+      "fontSize": 24
+    },
+    {
+      "slide": 7,
+      "text": "A skill is more than a long prompt",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 7,
+      "text": "Guidance, not guaranteed enforcement",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 7,
+      "text": "SKILL.md",
+      "x": 0.9,
+      "y": 2.33,
+      "w": 5.32,
+      "h": 0.45999999999999996,
+      "fontSize": 26
+    },
+    {
+      "slide": 7,
+      "text": "Supporting references",
+      "x": 0.9,
+      "y": 3.3800000000000003,
+      "w": 5.32,
+      "h": 0.45999999999999996,
+      "fontSize": 26
+    },
+    {
+      "slide": 7,
+      "text": "Workflow + review criteria",
+      "x": 0.9,
+      "y": 4.43,
+      "w": 5.32,
+      "h": 0.45999999999999996,
+      "fontSize": 26
+    },
+    {
+      "slide": 7,
+      "text": "name:\nnorthwind-modernization",
+      "x": 7.05,
+      "y": 2.7,
+      "w": 5.3,
+      "h": 1.5,
+      "fontSize": 24
+    },
+    {
+      "slide": 7,
+      "text": "Task-specific activation\nSelf-contained resources",
+      "x": 7.05,
+      "y": 4.3,
+      "w": 5.3,
+      "h": 1.1,
+      "fontSize": 26
+    },
+    {
+      "slide": 8,
+      "text": "Same task. Explicit organizational context",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 8,
+      "text": "Matching source hashes. Additional skill context",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 8,
+      "text": "Same legacy input",
+      "x": 0.9,
+      "y": 2.5300000000000002,
+      "w": 5.32,
+      "h": 1.54,
+      "fontSize": 32
+    },
+    {
+      "slide": 8,
+      "text": "Skill-guided request",
+      "x": 7.0600000000000005,
+      "y": 2.5300000000000002,
+      "w": 5.32,
+      "h": 1.54,
+      "fontSize": 32
+    },
+    {
+      "slide": 8,
+      "text": "Guided capture: not-run",
+      "x": 0.65,
+      "y": 4.8,
+      "w": 12,
+      "h": 0.55,
+      "fontSize": 28
+    },
+    {
+      "slide": 8,
+      "text": "Fallback: explicitly labeled reference walkthrough",
+      "x": 0.65,
+      "y": 5.45,
+      "w": 12,
+      "h": 0.55,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "What we will compare",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 9,
+      "text": "No captured runs. No declared winner",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 9,
+      "text": "Migration + build",
+      "x": 0.9,
+      "y": 2.2800000000000002,
+      "w": 7.9,
+      "h": 0.44000000000000006,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Not-run",
+      "x": 9.45,
+      "y": 2.1,
+      "w": 3,
+      "h": 0.8,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Pricing + wire contract",
+      "x": 0.9,
+      "y": 3.2,
+      "w": 7.9,
+      "h": 0.44000000000000006,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Not-run",
+      "x": 9.45,
+      "y": 3.02,
+      "w": 3,
+      "h": 0.8,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Audit + diagnostics",
+      "x": 0.9,
+      "y": 4.12,
+      "w": 7.9,
+      "h": 0.44000000000000006,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Not-run",
+      "x": 9.45,
+      "y": 3.9400000000000004,
+      "w": 3,
+      "h": 0.8,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Diff scope + review",
+      "x": 0.9,
+      "y": 5.04,
+      "w": 7.9,
+      "h": 0.44000000000000006,
+      "fontSize": 24
+    },
+    {
+      "slide": 9,
+      "text": "Not-run",
+      "x": 9.45,
+      "y": 4.86,
+      "w": 3,
+      "h": 0.8,
+      "fontSize": 24
+    },
+    {
+      "slide": 10,
+      "text": "From one developer to team practice",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 10,
+      "text": "Skills guide. Tests check. People decide",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 10,
+      "text": "Version",
+      "x": 0.9,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 10,
+      "text": "Review",
+      "x": 3.36,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 10,
+      "text": "Own",
+      "x": 5.82,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 10,
+      "text": "Reuse",
+      "x": 8.28,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 10,
+      "text": "Maintain",
+      "x": 10.74,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 11,
+      "text": "Your first skill starts with\none repeated explanation",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 11,
+      "text": "Pick one task. Capture one rule. Review the result",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 11,
+      "text": "Pick",
+      "x": 0.9,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 11,
+      "text": "Capture",
+      "x": 3.36,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 11,
+      "text": "Example",
+      "x": 5.82,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 11,
+      "text": "Review",
+      "x": 8.28,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 11,
+      "text": "Reuse",
+      "x": 10.74,
+      "y": 3.0300000000000002,
+      "w": 1.6400000000000001,
+      "h": 1.04,
+      "fontSize": 26
+    },
+    {
+      "slide": 12,
+      "text": "Try the workflow",
+      "x": 0.65,
+      "y": 0.55,
+      "w": 12,
+      "h": 1.35,
+      "fontSize": 36
+    },
+    {
+      "slide": 12,
+      "text": "Make knowledge explicit. Check behavior. Reuse what works",
+      "x": 0.65,
+      "y": 6.2,
+      "w": 12,
+      "h": 0.72,
+      "fontSize": 26
+    },
+    {
+      "slide": 12,
+      "text": "Sample repository link pending",
+      "x": 0.9,
+      "y": 2.2800000000000002,
+      "w": 11.5,
+      "h": 0.52,
+      "fontSize": 28
+    },
+    {
+      "slide": 12,
+      "text": "Official agent skills docs",
+      "x": 0.9,
+      "y": 3.43,
+      "w": 11.5,
+      "h": 0.52,
+      "fontSize": 28
+    },
+    {
+      "slide": 12,
+      "text": "Official upgrade docs",
+      "x": 0.9,
+      "y": 4.58,
+      "w": 11.5,
+      "h": 0.52,
+      "fontSize": 28
+    },
+    {
+      "slide": 12,
+      "text": "Q&A",
+      "x": 0.65,
+      "y": 5.65,
+      "w": 12,
+      "h": 0.45,
+      "fontSize": 24
+    }
+  ]
+}

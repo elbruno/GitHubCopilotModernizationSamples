@@ -1,0 +1,14 @@
+{
+  "assetId": "knowledge-transfer",
+  "slide": "S03",
+  "provider": "foundry-gpt-image-25-flare",
+  "prompt": "Original editorial comic illustration for a software engineering presentation. Premium clean 3D-meets-ink rendering, rounded geometric objects, deliberate dark purple outlines, dimensional soft shading, white background with a very subtle pale lavender grounding shadow. Restrained palette: vivid purple #512BD4, lilac #B9AAEE, pale lavender #EEEAFB, deep purple ink #190649, white. Friendly original small helper robot with a squared rounded head, two small circular eyes and compact box-shaped body, no antenna and no resemblance to any branded mascot. All subjects fully inside the frame with at least 12 percent white breathing room on every edge. Crisp silhouette, one strong focal story, composition understandable at thumbnail size, no busy scenery. Absolutely no text, letters, numbers, labels, code, logos, watermarks, user interfaces, screenshots, currency symbols, or product marks. This is conceptual artwork, not evidence of a real product or run. Do not create a slide or add a title. Scene: On the left, three loose blank lavender note cards and two empty speech bubbles float in a loose cluster. In the center, a small friendly purple helper robot gathers them carefully. On the right, a neat open white ring binder holds three clean blank cards with simple geometric color tabs. The three groups feel connected by their poses and composition, no arrows or text. Keep the entire scene comfortably inside frame. The idea is scattered team knowledge becoming a clearly organized reusable guide, not magic.",
+  "startedUtc": "2026-09-28T21:09:40.871716+00:00",
+  "endedUtc": "2026-09-28T21:10:12.769162+00:00",
+  "width": 1024,
+  "height": 1024,
+  "sha256": "fc6f6b8cb03b5557d84a874fbcdc44ddcf912adc4861992c85d55012b6b503a1",
+  "provenance": "AI-generated illustration; not proof of a real product or event.",
+  "reviewStatus": "pending",
+  "altText": "Conceptual illustration of scattered notes becoming an organized reusable guide"
+}

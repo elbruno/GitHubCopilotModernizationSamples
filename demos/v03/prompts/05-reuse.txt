@@ -1,0 +1,10 @@
+Use northwind-modernization for a small follow-up task in this already-modernized
+synthetic quote application. Add QuoteJson.WriteBatch(IReadOnlyList<QuoteResponse>)
+for existing responses, reusing the single-response serializer's output options.
+Preserve array order and each item's exact JSON field names, lowercase string
+enum, numeric money, and explicit review_note null. Empty input must produce [];
+a null collection must throw ArgumentNullException. Do not recalculate pricing,
+emit audit events, change the single-request CLI, migrate libraries or add packages.
+Add focused tests for two different responses, item equivalence with Write,
+empty input, and null input. Run the relevant and full existing tests. Identify
+applicable skill rules and report actual evidence, not assumed success.

@@ -1,0 +1,20 @@
+[
+  "global.json",
+  "Directory.Build.props",
+  "NuGet.Config",
+  "Northwind.slnx",
+  "TASK.md",
+  "src/Northwind.Audit/Northwind.Audit.csproj",
+  "src/Northwind.Audit/AuditTrail.cs",
+  "src/Northwind.Audit/packages.lock.json",
+  "src/Northwind.Domain/Northwind.Domain.csproj",
+  "src/Northwind.Domain/Quotation.cs",
+  "src/Northwind.Domain/packages.lock.json",
+  "src/Northwind.Quotes/Northwind.Quotes.csproj",
+  "src/Northwind.Quotes/Program.cs",
+  "src/Northwind.Quotes/QuoteJson.cs",
+  "src/Northwind.Quotes/packages.lock.json",
+  "tests/Northwind.SmokeTests/Northwind.SmokeTests.csproj",
+  "tests/Northwind.SmokeTests/SmokeTests.cs",
+  "tests/Northwind.SmokeTests/packages.lock.json"
+]
