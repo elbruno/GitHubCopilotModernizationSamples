@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "stagedUtc": "2026-09-29T15:05:59.7512522Z",
+  "stagedUtc": "2026-09-29T15:57:19.0674596Z",
   "status": "local attendee package; not a publication receipt",
   "excluded": [
     "internal bootstrap brief",
@@ -22,7 +22,15 @@
     },
     {
       "path": ".github/copilot-instructions.md",
-      "sha256": "6e557bd2a8284231d387d5431c954cd661572bb13e5538879f48a283223c8eae"
+      "sha256": "95269283efbb31d9e713e795402fdeb2f6b83594d9d0e14c120b90e9b0e5716c"
+    },
+    {
+      "path": ".github/skills/dotnet-brand-visuals/references/brand-rules.md",
+      "sha256": "18614001d70f1d70bbc7e607a84976709ac6f01f7d7ddabc191f59c2ee1437c5"
+    },
+    {
+      "path": ".github/skills/dotnet-brand-visuals/SKILL.md",
+      "sha256": "a40e5fb0fddc1cde7f880b7a91b9800278f6c134f37d120e5cd18a44889c5567"
     },
     {
       "path": ".github/skills/northwind-modernization/references/audit-and-privacy.md",
@@ -46,7 +54,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "307ed2f98cafe6e0315e40714bd9c07fe15cea9a0ded699f1af62be11596c49e"
+      "sha256": "7413c4d4c55c03149c3f29827a756de40f2a01315686c36a36ebe7b89d5eb1fc"
     },
     {
       "path": "demos/captures/baseline.json",
@@ -74,19 +82,19 @@
     },
     {
       "path": "demos/learn/demo02.md",
-      "sha256": "dfe6204dd57f7a16033a244203446023a15078f723ff47dd3f2a794ac2b9a3bd"
+      "sha256": "30959f04eff4e0b0b88809b8d8a43dd98a0ab929ceaab9d33914fa2f751eafb9"
     },
     {
       "path": "demos/learn/demo03.md",
-      "sha256": "2356321a2f05370337bdb903d9855749d8c6767ef59f98b82eb07870eb6966b5"
+      "sha256": "a71ab79a0b54e156042c99de45de9936fe7d8253d84003fae2760449e827a596"
     },
     {
       "path": "demos/learn/demo04.md",
-      "sha256": "3e87abc2a7e407ea347164586c4158f419510b739a30e484f67658760d1cad08"
+      "sha256": "945982c8dbf6efb56cc5f305af51cf21cef3f61abbb2ae40ec5d494a146bd450"
     },
     {
       "path": "demos/learn/demo05.md",
-      "sha256": "27460c24b32d2486bcab0b9fe672ae90d5d14179dcc7c6412fc8a5547f9c211e"
+      "sha256": "c259e0d88678c9e6e8c7db337d292700e6534fa673930da863ba3d947ae64282"
     },
     {
       "path": "demos/learn/README.md",
@@ -250,7 +258,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "cffc8becfc1c924b7f8a5ef4cae54700a2f9f630885964df8f08ebcd22f66378"
+      "sha256": "b62004ec7690e283e1454461175542cf90563ac86601f516010beb959770caf9"
     },
     {
       "path": "scripts/common.ps1",
@@ -306,7 +314,7 @@
     },
     {
       "path": "scripts/validate-content.ps1",
-      "sha256": "167c5f32fbb5cff75dcefc8ecbbfc65d2250706641b22d77492631f9db83cd3e"
+      "sha256": "ef8abb9880953c31a0a2f858f2aaa45451e1d2e442fba9509731430c2ee9aa5b"
     },
     {
       "path": "scripts/verify.ps1",

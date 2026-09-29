@@ -13,5 +13,6 @@ Use the SDK pinned in `global.json` and preserve existing work.
   demo exports. Use only the allowlist exporter, never copy the whole repository.
 - Report real evidence and distinguish failed, blocked, and not-run work.
   Domain guidance belongs in the northwind-modernization skill, not duplicated here.
+- For .NET slide or storytelling images, follow the dotnet-brand-visuals skill.
 - Do not install system-wide tools, publish, deploy, provision cloud services,
   push, send messages or change credentials/permissions without authorization.

@@ -73,8 +73,7 @@ No prompts or answer files are copied into the isolated demo input.
 ## Reset and try again
 
 ```powershell
-pwsh -NoProfile -File (Join-Path $kit 'scripts\set-demo-null-rule.ps1') `
-  -Workspace (Join-Path $demo '05-null-regression') -State Broken
+pwsh -NoProfile -File (Join-Path $kit 'scripts\set-demo-null-rule.ps1') -Workspace . -State Broken
 ```
 
 Use `-State Fixed` to apply the prepared fix without Copilot. If Copilot

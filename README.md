@@ -27,6 +27,7 @@ folders and walks you through each demo:
 | Path | What it is |
 | --- | --- |
 | [`.github/skills/northwind-modernization`](.github/skills/northwind-modernization/SKILL.md) | The reviewed custom skill: rules, examples and review checklist |
+| [`.github/skills/dotnet-brand-visuals`](.github/skills/dotnet-brand-visuals/SKILL.md) | A second example: the .NET brand guide as rules for slide and storytelling images (not used by the demos) |
 | [`knowledge/team-notes.md`](knowledge/team-notes.md) | The fictional team's tribal knowledge |
 | [`knowledge/rules-catalog.md`](knowledge/rules-catalog.md) | The four rules (R1-R4) and the JSON contract |
 | `fixtures/legacy-input` | The working legacy app on Newtonsoft.Json |

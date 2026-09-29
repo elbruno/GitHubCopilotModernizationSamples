@@ -42,6 +42,17 @@ No prompts or answer files are copied into the isolated demo input.
    **Copy raw file**. It asks Copilot to write a skill only, not to change the app.
 4. Open the new `.github\skills\northwind-modernization\SKILL.md`.
 
+> [!TIP]
+> **If Copilot takes too long,** use the finished sample instead. It's a
+> prepared, reviewed skill, not output from a Copilot run:
+> [`.github/skills/northwind-modernization/SKILL.md`](../../.github/skills/northwind-modernization/SKILL.md)
+> and its [`references/`](../../.github/skills/northwind-modernization/references/) folder.
+> Locally, from the demo folder (PowerShell or the VS Code terminal):
+>
+> ```powershell
+> code -r -g "..\03-guided\.github\skills\northwind-modernization\SKILL.md:1"
+> ```
+
 ## What to look for
 
 A good skill has:
@@ -70,8 +81,11 @@ Watch out for:
 Open the reviewed version from `03-guided` in the same VS Code window:
 
 ```powershell
-code -r -g "$(Join-Path $demo '03-guided\.github\skills\northwind-modernization\SKILL.md'):3"
+code -r -g "..\03-guided\.github\skills\northwind-modernization\SKILL.md:3"
 ```
+
+Run it from the demo folder (the PowerShell window or the VS Code terminal); the
+`..\` path reaches the sibling checkpoint without any variables.
 
 | Line | What to compare |
 | --- | --- |
@@ -87,5 +101,15 @@ It's also in this repository:
 
 A skill description helps Copilot choose the skill. It doesn't guarantee
 every rule is followed. That's why each rule should connect to a test.
+
+## Another example: knowledge that isn't code
+
+Team knowledge isn't only code rules. This repository also has
+[`dotnet-brand-visuals`](../../.github/skills/dotnet-brand-visuals/SKILL.md),
+a skill that turns the .NET brand guide into rules for slide and storytelling
+images: use official dotnet-bot art only, keep it small, label it, and don't
+overuse it. It keeps the brand guide's rules and the team's own decisions in
+separate tables, each with its source. Read it as a second pattern for your
+own team: a PDF of guidance becomes rules an agent can apply every time.
 
 **Next: [Demo 3](demo03.md).** Do not run setup again.

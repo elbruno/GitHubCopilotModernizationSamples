@@ -81,7 +81,7 @@ line 65 of `src\Northwind.Quotes\QuoteJson.cs`, and
 (lines 11, 34 and 42):
 
 ```powershell
-Set-Location (Join-Path $demo '07-reuse-complete')
+Set-Location ..\07-reuse-complete
 dotnet test .\tests\Northwind.UnitTests --no-restore --filter 'FullyQualifiedName~BatchSerializationTests'
 ```
 

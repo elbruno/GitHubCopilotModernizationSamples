@@ -54,11 +54,9 @@ No prompts or answer files are copied into the isolated demo input.
 4. When Copilot finishes, run the tests and the evaluator:
 
    ```powershell
-   Set-Location (Join-Path $demo '03-guided')
    dotnet test .\Northwind.slnx
-   Set-Location $kit
-   pwsh -NoProfile -File .\scripts\evaluate.ps1 `
-     -CandidateRoot (Join-Path $demo '03-guided') `
+   pwsh -NoProfile -File (Join-Path $kit 'scripts\evaluate.ps1') `
+     -CandidateRoot . `
      -OutputDirectory (Join-Path $kit ('artifacts\guided-' + [guid]::NewGuid()))
    ```
 
