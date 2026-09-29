@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "stagedUtc": "2026-09-29T14:52:08.0589460Z",
+  "stagedUtc": "2026-09-29T15:05:59.7512522Z",
   "status": "local attendee package; not a publication receipt",
   "excluded": [
     "internal bootstrap brief",
@@ -306,7 +306,7 @@
     },
     {
       "path": "scripts/validate-content.ps1",
-      "sha256": "466befeb2dc82a5a5707e13de3430c8faab55fbec8628cb949630ba933b94440"
+      "sha256": "167c5f32fbb5cff75dcefc8ecbbfc65d2250706641b22d77492631f9db83cd3e"
     },
     {
       "path": "scripts/verify.ps1",
