@@ -7,7 +7,7 @@
 A skill isn't a one-time prompt. The same team knowledge helps with a new,
 different task.
 
-## Open and inspect the demo
+## Open the demo
 
 First complete [setup](README.md). In the **same PowerShell window**:
 
@@ -15,37 +15,44 @@ First complete [setup](README.md). In the **same PowerShell window**:
 . (Join-Path $kit 'scripts\open-demo.ps1') -Demo 5
 ```
 
-This opens VS Code, selects the demo directory and sets `$demo` and `$prompt`.
+This opens VS Code, changes to the demo directory and sets `$demo` and `$prompt`.
 Keep using this PowerShell window for commands; use VS Code for code and Chat.
 In a new terminal, first set `$kit` to the full path of your cloned repository.
 No prompts or answer files are copied into the isolated demo input.
 
-Press **Ctrl+P** in VS Code to inspect:
-
-| File | Current state |
-| --- | --- |
-| `src\Northwind.Quotes\QuoteJson.cs` | System.Text.Json is already in place; Write exists, WriteBatch does not |
-| `src\Northwind.Quotes\Northwind.Quotes.csproj` | No Newtonsoft.Json dependency |
-| `.github\skills\northwind-modernization\SKILL.md` | Reuse the same rules for a new task |
-
-When the steps below ask for the prompt, run this **immediately before pasting**,
-then paste into a fresh Copilot Chat in Agent mode:
-
-```powershell
-Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
-```
-
 ## Steps
 
-1. Open `$demo\06-reuse-start`. The app is already on System.Text.Json and
-   has the skill.
-2. Start a fresh Copilot conversation and paste the contents of
-   `demos/v03/prompts/05-reuse.txt`. It asks for a new
-   `QuoteJson.WriteBatch` method that writes several quotes as one JSON array.
+1. Inspect the starting code. The app is already on System.Text.Json and has
+   the skill. In VS Code press **Ctrl+P**, paste the `file:line` value and press
+   Enter (or use **Ctrl+G** for the line):
+
+   | Ctrl+P (file:line) | Current state |
+   | --- | --- |
+   | `src\Northwind.Quotes\QuoteJson.cs:15` | Lines 15-20: `OutputOptions` with System.Text.Json |
+   | `src\Northwind.Quotes\QuoteJson.cs:63` | Line 63: `Write` for one response; there is no `WriteBatch` yet |
+   | `src\Northwind.Quotes\Northwind.Quotes.csproj:6` | Lines 6-7: no Newtonsoft.Json dependency |
+   | `.github\skills\northwind-modernization\SKILL.md:55` | Lines 55-58: the skill's reuse branch |
+
+2. Start a **fresh** Copilot Chat in Agent mode. Copy this prompt (use the copy
+   button on the block) and paste it into Copilot Chat:
+
+   ```text
+   Use northwind-modernization for a small follow-up task in this already-modernized
+   synthetic quote application. Add QuoteJson.WriteBatch(IReadOnlyList<QuoteResponse>)
+   for existing responses, reusing the single-response serializer's output options.
+   Preserve array order and each item's exact JSON field names, lowercase string
+   enum, numeric money, and explicit review_note null. Empty input must produce [];
+   a null collection must throw ArgumentNullException. Do not recalculate pricing,
+   emit audit events, change the single-request CLI, migrate libraries or add packages.
+   Add focused tests for two different responses, item equivalence with Write,
+   empty input, and null input. Run the relevant and full existing tests. Identify
+   applicable skill rules and report actual evidence, not assumed success.
+   ```
+
+   Prompt file: `demos\v03\prompts\05-reuse.txt` in your clone (also in `$prompt`).
 3. Run the new tests, then the full suite:
 
    ```powershell
-   Set-Location (Join-Path $demo '06-reuse-start')
    dotnet test .\tests\Northwind.UnitTests --no-restore --filter 'FullyQualifiedName~Batch'
    dotnet test .\Northwind.slnx --no-restore
    ```
@@ -53,6 +60,8 @@ Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
    If Copilot used a different test class name, change the filter to match.
 
 ## What to look for
+
+Line numbers change after Copilot edits, so use **Ctrl+F** for `WriteBatch`:
 
 - `WriteBatch` reuses the same serializer options as `Write`.
 - Items stay in their original order.
@@ -66,8 +75,10 @@ Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
 You didn't repeat the rules in the prompt. The skill carried them. That's the
 payoff of writing tribal knowledge down once.
 
-Compare with the prepared version in `07-reuse-complete`, which has three
-focused tests:
+Compare with the prepared version in `07-reuse-complete`: `WriteBatch` is at
+line 65 of `src\Northwind.Quotes\QuoteJson.cs`, and
+`tests\Northwind.UnitTests\BatchSerializationTests.cs` has three focused tests
+(lines 11, 34 and 42):
 
 ```powershell
 Set-Location (Join-Path $demo '07-reuse-complete')

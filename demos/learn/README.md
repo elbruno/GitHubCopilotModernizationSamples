@@ -48,15 +48,17 @@ script stops if a parent folder has its own Copilot instructions or skills
 
 Keep this PowerShell window open for all commands. Use VS Code for code and
 Copilot Chat, and your browser for the instructions. The helper sets `$demo`
-and `$prompt` for each demo. No folder hunting is needed.
+and `$prompt` for each demo. No folder hunting is needed. Each demo page lists
+the code to inspect as `file:line`: paste it into VS Code's **Ctrl+P** to jump there.
 
 ## Three rules for good results
 
 1. **Open one demo folder at a time** in your editor, not the parent folder
    and not this repository. This repository contains the answers.
 2. **Start a fresh Copilot conversation** for each demo.
-3. **Paste the prompt files exactly.** They're in `prompts/` and
-   `demos/v03/prompts/`.
+3. **Copy the prompts exactly.** Prompts of 10 lines or fewer are printed on
+   each demo page with a copy button. Every page also names the prompt file in
+   `prompts/` or `demos/v03/prompts/`.
 
 Copilot's output changes from run to run. You may get a perfect result in
 Demo 1 or a mistake in Demo 3. Both are useful. The goal is to learn how to
@@ -64,8 +66,10 @@ check the work, not to get the same answer as someone else.
 
 ## Start over
 
-Run the setup block again; it selects a fresh workspace only after checks pass. The script never
-overwrites an existing folder.
+Run the setup block again. It creates a new folder of seven fresh demo copies
+and points the demo pages to it only after all checks pass. It never deletes or
+overwrites older folders; it prints the previous folder so you can delete it
+yourself. Close editor windows that still show old demo folders.
 
 ## Keep learning
 

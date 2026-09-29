@@ -1,16 +1,16 @@
 #Requires -Version 7
 <#
 .SYNOPSIS
-  Opens one demo for the presenter: editor window, prompt on the clipboard,
-  and the exact terminal commands with real paths.
+  Opens one demo: editor window, demo directory and the prompt file path.
+  Dot-source it so $kit, $demo and $prompt stay set in this terminal.
 .EXAMPLE
-  pwsh -File .\scripts\open-demo.ps1 -Demo 1
+  . .\scripts\open-demo.ps1 -Demo 1
 #>
 param(
     [Parameter(Mandatory)][Alias('Demo')][ValidateRange(1, 5)][int]$DemoNumber,
     [string]$Workspace,
     [ValidateSet('code', 'code-insiders', 'none')][string]$Editor = 'code',
-    [switch]$NoClipboard
+    [switch]$CopyPrompt
 )
 $ErrorActionPreference = 'Stop'
 $kit = Split-Path $PSScriptRoot -Parent
@@ -43,14 +43,18 @@ if ($Editor -ne 'none') {
     & $editorCommand --new-window $folder
     if ($LASTEXITCODE -ne 0) { throw "Editor failed to open $folder (exit $LASTEXITCODE)" }
 }
-if (-not $NoClipboard) { Get-Content -LiteralPath $prompt -Raw | Set-Clipboard }
+if ($CopyPrompt) { Get-Content -LiteralPath $prompt -Raw | Set-Clipboard }
 Set-Location -LiteralPath $folder
 
 Write-Host ""
 Write-Host "Demo $DemoNumber is ready" -ForegroundColor Green
 Write-Host "  Editor window : $folder"
 Write-Host "  Prompt file   : $prompt"
-if (-not $NoClipboard) { Write-Host '  Prompt copied to clipboard. Copy it again before pasting if you copy other commands.' }
+if ($CopyPrompt) {
+    Write-Host '  Prompt copied to clipboard. Paste it into Copilot Chat before copying anything else.'
+} else {
+    Write-Host '  Copy the prompt from the demo page (copy button) or open the prompt file above.'
+}
 if ($map.Fallback) { Write-Host "  Fallback      : $(Join-Path $Workspace $map.Fallback)" }
 Write-Host ""
 Write-Host "Next:" -ForegroundColor Cyan
