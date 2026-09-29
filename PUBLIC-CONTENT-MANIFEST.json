@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "stagedUtc": "2026-09-28T22:03:42.9661685Z",
+  "stagedUtc": "2026-09-29T14:16:25.2438795Z",
   "status": "local attendee package; not a publication receipt",
   "excluded": [
     "internal bootstrap brief",
@@ -46,7 +46,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "9b73486db242640f27ca8036899e61994f14fa2edf8eace1901d72bbf3150487"
+      "sha256": "a626410df77c64040c79ebc9b5a8327c21a709dc3a9e202ed71298441c327c69"
     },
     {
       "path": "demos/captures/baseline.json",
@@ -70,27 +70,31 @@
     },
     {
       "path": "demos/learn/demo01.md",
-      "sha256": "2a32032386a1b778154f49b43a1560c870032f63cd11f4430237e6329e62493c"
+      "sha256": "367bf286f94b3ba647fd9c2176155e7ccaeb44d10fa21e32fd456bd90afc5c53"
     },
     {
       "path": "demos/learn/demo02.md",
-      "sha256": "543368b908571f711e175287f3fc6b14c70c1d61d0489fa3fbfd52d7f56e5954"
+      "sha256": "c1630fca9c65123848b814430c183aa94ab3da59aba09df803b783613f61882d"
     },
     {
       "path": "demos/learn/demo03.md",
-      "sha256": "574a98ecf1762ea6dd9183845676de2678942250ace6f4e6a3b3633fbc23cb00"
+      "sha256": "7a8cf7ad9c8d99c4963969e889ea783037d42a26fd8fa25fa658d4705d9a7672"
     },
     {
       "path": "demos/learn/demo04.md",
-      "sha256": "cc187c761740b75243f0340e1a0d162d3dea1b384897d74b8b35b0300aa8fcca"
+      "sha256": "d3ecb50501d92ff5f5e3f0447ec6280f722d614c8266932844b19fe378f76e8b"
     },
     {
       "path": "demos/learn/demo05.md",
-      "sha256": "91827b93f4fa799b16a608afea5fe18809a9e93cc090d5191c29e4195f674aca"
+      "sha256": "931b15b3ec7efba1ea2032f0c5881b750082e5a476bf567fd6f08f43592d95b8"
     },
     {
       "path": "demos/learn/README.md",
-      "sha256": "31a69e8ca58e5469e91a4fb5759a2d5ae685880053152b92cb3947301ae09ff1"
+      "sha256": "9f82f358604fef9506d925388dec2ac3e36316872b852263de64fc63b7d94735"
+    },
+    {
+      "path": "demos/README.md",
+      "sha256": "404627c7941e22d5a07d7038f763a1bbefafbeb8ff76c8188339df94f46a1c1a"
     },
     {
       "path": "demos/reference-evidence.json",
@@ -126,7 +130,7 @@
     },
     {
       "path": "docs/resources.md",
-      "sha256": "00576c5e57994a4166fc58bd61367443dcdf3113da33fbce42b74515c56a13ab"
+      "sha256": "c097fff25c75560300126546ea16aa52d1a5a7d5e781b157e8413583a4bebdc6"
     },
     {
       "path": "fixtures/legacy-input/Directory.Build.props",
@@ -246,7 +250,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "766bdb0f828b7cbc789fa82eb59a2716f6b90b180081d06e00e3dd88017a3e4a"
+      "sha256": "cffc8becfc1c924b7f8a5ef4cae54700a2f9f630885964df8f08ebcd22f66378"
     },
     {
       "path": "scripts/common.ps1",
@@ -273,6 +277,10 @@
       "sha256": "91890b1e37cb9dcf9f6aa68db775c81b66833fc2fcd6d0204f927e1427613fea"
     },
     {
+      "path": "scripts/open-demo.ps1",
+      "sha256": "3d74381429138b191f1b5ab95bf13987c74bb2c3c3e39b584fa2ea5e4b73dac5"
+    },
+    {
       "path": "scripts/prepare-v03.ps1",
       "sha256": "c414cde18f1ffd73e804830a9c6e1c25d8b77c5eff3e6a1f7887ca7f6e0b7f94"
     },
@@ -285,6 +293,10 @@
       "sha256": "dc75aa48276c0f353ffb4fd65af8c7f536749a232667aa0206ac74f12e7374bf"
     },
     {
+      "path": "scripts/start-demos.ps1",
+      "sha256": "07520f79f900761ea5c079406966ece352aa0afc486d85880907d5296cc4d0f6"
+    },
+    {
       "path": "scripts/test-export.ps1",
       "sha256": "338d31b8a39f88d29ccc44cbb007a052cb3f1464578bacee35651042777f7f25"
     },
@@ -294,7 +306,7 @@
     },
     {
       "path": "scripts/validate-content.ps1",
-      "sha256": "9f11ba4c2705fa33ccd263c2c0ac28dc71be701477a0f2143c1a65eaf6055686"
+      "sha256": "854fa4a3d34df1b36fc075ec20a89c2f8a17649d9f63bd41905d2d2709032bca"
     },
     {
       "path": "scripts/verify.ps1",

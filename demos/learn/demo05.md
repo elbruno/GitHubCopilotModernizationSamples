@@ -7,6 +7,34 @@
 A skill isn't a one-time prompt. The same team knowledge helps with a new,
 different task.
 
+## Open and inspect the demo
+
+First complete [setup](README.md). In the **same PowerShell window**:
+
+```powershell
+. (Join-Path $kit 'scripts\open-demo.ps1') -Demo 5
+```
+
+This opens VS Code, selects the demo directory and sets `$demo` and `$prompt`.
+Keep using this PowerShell window for commands; use VS Code for code and Chat.
+In a new terminal, first set `$kit` to the full path of your cloned repository.
+No prompts or answer files are copied into the isolated demo input.
+
+Press **Ctrl+P** in VS Code to inspect:
+
+| File | Current state |
+| --- | --- |
+| `src\Northwind.Quotes\QuoteJson.cs` | System.Text.Json is already in place; Write exists, WriteBatch does not |
+| `src\Northwind.Quotes\Northwind.Quotes.csproj` | No Newtonsoft.Json dependency |
+| `.github\skills\northwind-modernization\SKILL.md` | Reuse the same rules for a new task |
+
+When the steps below ask for the prompt, run this **immediately before pasting**,
+then paste into a fresh Copilot Chat in Agent mode:
+
+```powershell
+Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
+```
+
 ## Steps
 
 1. Open `$demo\06-reuse-start`. The app is already on System.Text.Json and

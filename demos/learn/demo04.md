@@ -6,6 +6,34 @@
 
 Skills explain the rules. Tests catch it when a rule breaks. You need both.
 
+## Open and inspect the demo
+
+First complete [setup](README.md). In the **same PowerShell window**:
+
+```powershell
+. (Join-Path $kit 'scripts\open-demo.ps1') -Demo 4
+```
+
+This opens VS Code, selects the demo directory and sets `$demo` and `$prompt`.
+Keep using this PowerShell window for commands; use VS Code for code and Chat.
+In a new terminal, first set `$kit` to the full path of your cloned repository.
+No prompts or answer files are copied into the isolated demo input.
+
+Press **Ctrl+P** in VS Code to inspect:
+
+| File | Current state |
+| --- | --- |
+| `src\Northwind.Quotes\QuoteJson.cs` | WhenWritingNull is the deliberate regression |
+| `tests\Northwind.UnitTests\SerializationTests.cs` | PreservesExplicitNull protects review_note |
+| `.github\skills\northwind-modernization\SKILL.md` | The rule explains why the null field is required |
+
+When the steps below ask for the prompt, run this **immediately before pasting**,
+then paste into a fresh Copilot Chat in Agent mode:
+
+```powershell
+Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
+```
+
 ## Steps
 
 1. Open `$demo\05-null-regression`. This copy was broken **on purpose**: the
@@ -50,3 +78,5 @@ that case, run the set-up again with a new `$demo` folder.
 
 Deleting or weakening a failing assertion makes the test green but hides the
 bug. The skill explains *why* the field exists, and the test proves it's back.
+
+**Next: [Demo 5](demo05.md).** Do not run setup again.

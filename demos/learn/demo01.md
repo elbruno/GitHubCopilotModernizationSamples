@@ -8,6 +8,34 @@ Copilot knows the technology. It doesn't know your team's unwritten rules.
 In this demo you ask for the migration with no extra context, then check
 what happened.
 
+## Open and inspect the demo
+
+First complete [setup](README.md). In the **same PowerShell window**:
+
+```powershell
+. (Join-Path $kit 'scripts\open-demo.ps1') -Demo 1
+```
+
+This opens VS Code, selects the demo directory and sets `$demo` and `$prompt`.
+Keep using this PowerShell window for commands; use VS Code for code and Chat.
+In a new terminal, first set `$kit` to the full path of your cloned repository.
+No prompts or answer files are copied into the isolated demo input.
+
+Press **Ctrl+P** in VS Code to inspect:
+
+| File | Current state |
+| --- | --- |
+| `src\Northwind.Quotes\Northwind.Quotes.csproj` | Newtonsoft.Json dependency |
+| `src\Northwind.Quotes\QuoteJson.cs` | OutputSettings: snake case, string enums, explicit null |
+| `src\Northwind.Domain\Quotation.cs` | Pricing and rounding must not change |
+
+When the steps below ask for the prompt, run this **immediately before pasting**,
+then paste into a fresh Copilot Chat in Agent mode:
+
+```powershell
+Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
+```
+
 ## Steps
 
 1. Check that the legacy app works:
@@ -42,3 +70,5 @@ know what "right" means? You had to know the team's rules. The next demos
 write those rules down so Copilot and the next developer can use them.
 
 Compare with the prepared migration in `04-reference`.
+
+**Next: [Demo 2](demo02.md).** Do not run setup again.

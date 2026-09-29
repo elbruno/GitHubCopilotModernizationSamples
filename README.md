@@ -103,5 +103,9 @@ intentionally marked not-run.
 
 ## Learn more
 
+- [Awesome Copilot](https://awesome-copilot.github.com/): community library of skills, agents, instructions and hooks for GitHub Copilot
+- [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 - [Session resources and official docs](docs/resources.md)
 - [Maintaining the sample and skill](docs/maintenance.md)
+
+Bruno's main link: [aka.ms/elbruno](https://aka.ms/elbruno).

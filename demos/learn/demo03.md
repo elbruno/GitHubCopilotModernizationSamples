@@ -7,6 +7,34 @@
 How to run the same migration as Demo 1 with the team's knowledge available,
 and how to check the result instead of assuming it's better.
 
+## Open and inspect the demo
+
+First complete [setup](README.md). In the **same PowerShell window**:
+
+```powershell
+. (Join-Path $kit 'scripts\open-demo.ps1') -Demo 3
+```
+
+This opens VS Code, selects the demo directory and sets `$demo` and `$prompt`.
+Keep using this PowerShell window for commands; use VS Code for code and Chat.
+In a new terminal, first set `$kit` to the full path of your cloned repository.
+No prompts or answer files are copied into the isolated demo input.
+
+Press **Ctrl+P** in VS Code to inspect:
+
+| File | Current state |
+| --- | --- |
+| `.github\skills\northwind-modernization\SKILL.md` | Reviewed team context is available |
+| `src\Northwind.Quotes\Northwind.Quotes.csproj` | Still the same legacy Newtonsoft.Json dependency |
+| `src\Northwind.Quotes\QuoteJson.cs` | Same migration task, now with the skill |
+
+When the steps below ask for the prompt, run this **immediately before pasting**,
+then paste into a fresh Copilot Chat in Agent mode:
+
+```powershell
+Get-Content -LiteralPath $prompt -Raw | Set-Clipboard
+```
+
 ## Steps
 
 1. Open `$demo\03-guided`. It has the same code and tests as `01-baseline`,
@@ -47,3 +75,5 @@ Demo 3. For a stricter comparison, see "Optional independent comparison" in
 the main README.
 
 Compare with the prepared answer in `04-reference`.
+
+**Next: [Demo 4](demo04.md).** Do not run setup again.

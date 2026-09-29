@@ -34,14 +34,11 @@ From the root of this repository:
 
 ```powershell
 $kit  = (Get-Location).Path
-New-Item -ItemType Directory -Path C:\NorthwindDemos -Force | Out-Null
-$demo = Join-Path C:\NorthwindDemos ('run-' + (Get-Date -Format 'yyyyMMdd-HHmmss'))
-pwsh -NoProfile -File .\scripts\prepare-v03.ps1 -Destination $demo
-pwsh -NoProfile -File .\scripts\test-v03.ps1 -Workspace $demo `
-  -OutputDirectory (Join-Path $kit ('artifacts\check-' + [guid]::NewGuid()))
+pwsh -NoProfile -File .\scripts\start-demos.ps1 -Parent C:\NorthwindDemos
 ```
 
-This creates seven separate demo folders under `$demo` and checks them. The
+Wait for **SETUP PASSED**, then open [Demo 1](demo01.md). The script creates
+seven isolated folders and saves their location; each demo page selects its folder. The
 check expects one failing test in `05-null-regression`. That bug is there on
 purpose for Demo 4.
 
@@ -49,7 +46,9 @@ Use a folder that isn't inside your user profile or another repository. The
 script stops if a parent folder has its own Copilot instructions or skills
 (for example `~\.agents\skills`), because those would leak into the demos.
 
-Keep this terminal open. The demo pages use `$kit` and `$demo`.
+Keep this PowerShell window open for all commands. Use VS Code for code and
+Copilot Chat, and your browser for the instructions. The helper sets `$demo`
+and `$prompt` for each demo. No folder hunting is needed.
 
 ## Three rules for good results
 
@@ -65,5 +64,13 @@ check the work, not to get the same answer as someone else.
 
 ## Start over
 
-Run the set-up block again with a new `$demo` folder. The script never
+Run the setup block again; it selects a fresh workspace only after checks pass. The script never
 overwrites an existing folder.
+
+## Keep learning
+
+- [Awesome Copilot](https://awesome-copilot.github.com/): community skills,
+  agents and instructions. Find one to start from, and share yours back.
+- [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills):
+  the official format and how Copilot loads a skill.
+- [More session resources](../../docs/resources.md)
