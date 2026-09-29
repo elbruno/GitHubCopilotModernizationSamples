@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "stagedUtc": "2026-09-29T15:57:19.0674596Z",
+  "stagedUtc": "2026-09-29T17:33:41.5577243Z",
   "status": "local attendee package; not a publication receipt",
   "excluded": [
     "internal bootstrap brief",
@@ -133,6 +133,10 @@
       "sha256": "99965a5ed8bef7ec9d165f2341fd59592d41ab03dbadc409b34be341192cd2d1"
     },
     {
+      "path": "docs/evaluating-skills.md",
+      "sha256": "bb66a4d9de2d6f815bf4f934250838bbdea441d62c11ef69c594e269a00e0604"
+    },
+    {
       "path": "docs/maintenance.md",
       "sha256": "10865d84bcfecd02a359cefd463ccf96bb09b0498bc8da23704c1306adb1c77c"
     },
@@ -258,7 +262,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "b62004ec7690e283e1454461175542cf90563ac86601f516010beb959770caf9"
+      "sha256": "1c6857059b8424f637122821f4e6689805b2db106add3a5b193fb22ea6847486"
     },
     {
       "path": "scripts/common.ps1",

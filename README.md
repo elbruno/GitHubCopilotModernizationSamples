@@ -102,10 +102,14 @@ Exit codes: 0 all checks passed, 1 a check failed, 2 incomplete or not run.
 No sample Copilot results are included; the captures in `demos/captures` are
 intentionally marked not-run.
 
+For a repeatable benchmark (several runs per side, pass rate per rule), see
+[Evaluating a skill](docs/evaluating-skills.md).
+
 ## Learn more
 
 - [Awesome Copilot](https://awesome-copilot.github.com/): community library of skills, agents, instructions and hooks for GitHub Copilot
 - [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
+- [Evaluating a skill: a simple benchmark setup](docs/evaluating-skills.md)
 - [Session resources and official docs](docs/resources.md)
 - [Maintaining the sample and skill](docs/maintenance.md)
 
